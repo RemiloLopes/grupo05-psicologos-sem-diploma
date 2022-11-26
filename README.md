@@ -1,2 +1,2 @@
-# grupo04-psicologos-sem-diploma
+# grupo05-psicologos-sem-diploma
 Projeto Integrador - Tema: Saúde Mental.
