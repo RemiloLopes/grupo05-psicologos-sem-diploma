@@ -1,5 +1,13 @@
-.wrapper{
-    width: 100%;
-    height: 10rem;
-    background:url(./imgs/header_background_generico.jpg)
+/* .wrapper{ 
+    width: 100vw;
+    height: 20rem;
+    background:url('/neuroses/assets/imgs/header_background_generico.jpg');
+} */
+
+#neuroses{
+    display:block
+}
+
+.hidden-content{
+    display: none;
 }

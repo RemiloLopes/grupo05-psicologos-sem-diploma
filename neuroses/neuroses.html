@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="/neuroses/assets/neuroses.js"></script>
     <title>Neuroses Comuns</title>
 </head>
 <body>
@@ -11,7 +13,7 @@
         <div class="container">
             <div class="wrapper">
                 <!-- <img src="./assets/imgs/header_background_generico.jpg" alt="Header image" class="header-background"> -->
-                <a href="/home/index.html"><img src="./assets/imgs/logo.png" alt="Logo Health Mental" class="logo"></a>
+                <a href="/home/index.html"><img src="/neuroses/assets/imgs/logo.png" alt="Logo Health Mental" class="logo" width , height="200px"></a>
                 <nav>
                     <ul>
                         <li>
@@ -35,10 +37,128 @@
         </div>
     </header>
     <section>
-
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <ul>
+                    <li>
+                        <a class="side-link" href="#" onclick="showContent(event,neuroses)">Neuroses</a>
+                    </li>
+                    <li>
+                        <a class="side-link" href="#" onclick="showContent(event,ansiedade)">Ansiedade</a>
+                    </li>
+                    <li>
+                        <a class="side-link" href="#" onclick="showContent(event,depressao)">Depressão</a>
+                    </li>
+                    <li>
+                        <a class="side-link" href="#" onclick="showContent(event,burnout)">Burnout</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="hidden-content" id="neuroses">
+                <h1>Neuroses</h1>
+                <h3>Breve definição e sintomas</h3>
+                <p>
+                    Neurose é uma condição emocional, afetiva e de personalidade que acontece quando o sistema nervoso de uma pessoa reage de forma descomedida, muito intensa, a uma determinada experiência já vivida. Uma pessoa neurótica passa a ter reações e comportamentos diferentes: fica muito ansiosa, evita sair de casa para ir a determinados lugares, tem medo de certas situações, imagina situações que pode fazer mal, ficam deprimidos mais constantemente, são mais preocupados... enfim, uma pessoa neurótica sente tudo o que uma pessoa normal sente no seu dia-a-dia mas sempre de forma amplificada e fora do controle. Em geral uma pessoa neurótica sabe do seu problema, sofre com isso, mas se sente incapaz de solucioná-lo.
+                </p>
+                <h3>Opções de Tratamento</h3>
+                <p>
+                    O tratamento mais comum para ajudar um paciente neurótico a lidar com esse distúrbio é a <b>psicoterapia</b>. A psicoterapia permite transformações profundas e pode ser feita individualmente, em grupo, com casal, entre família e intervenção institucional. Existem algumas vertentes diferentes de psicoterapia, cada uma com uma abordagem diferente.
+                </p>
+                <p>
+                    Dentro dessas vertentes, uma se destaca. O tratamento mais eficaz, testado e comprovado cientificamente, para neuroses é a <b>Terapia Cognitivo Comportamental</b>, também chamada de <b>TCC</b>. A TCC é uma abordagem da psicoterapia baseada na combinação de conceitos do Behaviorismo radical com teorias cognitivas. A TCC entende a forma como o ser humano interpreta os acontecimentos como aquilo que nos afeta, e não os acontecimentos em si. Ou seja: é a forma como cada pessoa vê, sente e pensa com relação à uma situação que causa desconforto, dor, incômodo, tristeza ou qualquer outra sensação negativa. Seu objetivo principal é identificar padrões de comportamento, pensamento, crenças e hábitos que estão na origem dos problemas,  indicando, a partir disso, técnicas para alterar essas percepções de forma positiva. A TCC se destina tanto ao tratamento dos diferentes transtornos psicológicos e emocionais como a depressão, ansiedade, transtornos psicossomáticos, transtornos alimentares, fobias, traumas, dependência química, entre outros.
+                </p>
+                <h3>Descrição técnica e um pouco da história</h3>
+                <p>
+                    Neuroses são quadros patológicos psicogênicos (ou seja, de origem psíquica), muitas vezes ligados a situações externas na vida do indivíduo, os quais provocam transtornos na área mental, física e/ou da personalidade. De acordo com a visão psicanalítica, as neuroses são fruto de tentativas ineficazes de lidar com conflitos e traumas inconscientes. O que distingue a neurose da normalidade é: (1) a intensidade do comportamento e (2) a incapacidade do doente de resolver os conflitos internos e externos de maneira satisfatória.
+                </p>
+                <p>
+                    O conceito de neurose está assim intimamente ligado à teoria nosológica psicanalítica, ou seja, à maneira como a psicanálise explica a origem e o desenvolvimento dos transtornos mentais. Por isso psicólogos oriundos de outras escolas, sobretudo da terapia cognitivo-comportamental, foram levados a criticar o termo: como tais psicoterapeutas não trabalham com os conceitos psicanalíticos, um diagnóstico de neurose não tem para eles nenhum sentido prático. Essa crítica levou a uma modificação dos sistemas de classificação de doenças: os atuais sistemas de classificação dos transtornos mentais abandonaram uma abordagem nosológica e adotaram uma descritiva. Isso significa que os transtornos não são mais classificados pela suposta origem do transtorno (por esta ser controversa), mas por seus sintomas observáveis (por estes serem unânimes). Assim, na nona edição da Classificação Internacional de Doenças (CID-9) havia uma categoria "Neuroses" de transtornos mentais própria, já com a publicação da décima edição (CID-10) em 1994 o termo passou a ser usado apenas descritivamente (e não mais "neuroses", mas "transtornos neuróticos") e não para todas as categorias que ele tradicionalmente designava.
+                </p>
+                <p>
+                    Segundo a CID-9, sob neurose entendem-se os seguintes grupos de transtornos mentais:
+                </p>
+                <ul>
+                    <li>Transtornos fóbicos-ansiosos e outros transtornos de ansiedade;</li>
+                    <li>Transtorno obsessivo-compulsivo</li>
+                    <li>Transtorno dissociativo (de conversão)</li>
+                    <li>Transtornos somatoformes</li>
+                    <li>Distimia e determinados tipos de depressão</li>
+                    <li>Neurastenia</li>
+                </ul>
+                <p>
+                    S. O. Hoffmann e G. Hochapfel fazem notar que a atual classificação dos transtornos mentais, por ser meramente descritiva, não faz jus à complexidade dos transtornos mentais, reduzindo-os a seus sintomas observáveis. M. Perrez e U. Baumann observam, por outro lado, que, apesar de não corresponderem a essa complexidade, os atuais sistemas representam uma base comum ao diálogo entre as diferentes escolas de psicoterapia.
+                </p>
+                <p><b>Fontes</b>(Consultado e adaptado):</p>
+                <ul>
+                    <a href="https://pt.wikipedia.org/wiki/Neurose"><li>https://pt.wikipedia.org/wiki/Neurose</li></a>
+                    <a href="https://brasilescola.uol.com.br/doencas/neurose.htm"><li>https://brasilescola.uol.com.br/doencas/neurose.htm</li></a>
+                    <a href="https://www.vittude.com/blog/terapia-cognitivo-comportamental/"><li>https://www.vittude.com/blog/terapia-cognitivo-comportamental/</li></a>
+                </ul>
+            </div>
+            <div class="hidden-content" id="ansiedade">
+                <h2>Ansiedade</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nam deserunt harum fuga atque quia vero ex voluptatum mollitia possimus? Aliquid commodi maxime tempora officia, dolore non unde modi cumque?</p>
+            </div>
+            <div class="hidden-content" id="depressao">
+                <h2>Depressão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nam deserunt harum fuga atque quia vero ex voluptatum mollitia possimus? Aliquid commodi maxime tempora officia, dolore non unde modi cumque?</p>
+            </div>
+            <div class="hidden-content" id="burnout">
+                <h2>Burnout</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nam deserunt harum fuga atque quia vero ex voluptatum mollitia possimus? Aliquid commodi maxime tempora officia, dolore non unde modi cumque?</p>
+            </div>
+        </div>
     </section>
     <footer>
-
+        <div class="f-container">
+            <div class="f-wrapper">
+                <div class="disclaimer">
+                    <div class="titulo-disclaimer">
+                        <img src="/neuroses/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
+                        <h3>Aviso!</h3>
+                        <img src="/neuroses/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
+                    </div>
+                    <p>
+                        É muito importante frisar que a nossa equipe <b>não é formada por profissionais da área da saúde mental.</b> <br>
+                        O nosso conteúdo tem o objetivo de <b>informar</b> e ajudar pessoas a entenderem melhor alguns quadros. <br>
+                        O que nos leva a um outro disclaimer importante: <b>Não se autodiagnostique, por favor.</b> <br>
+                        É de extrema importância que, caso você se identifique com algum quadro, <b>procure ajuda profissional.</b>
+                    </p> 
+                </div>
+                <div class="cvv">
+                    <p>Em caso de pensamentos ruins e/ou ideação suicida, <b>ligue 188</b> - <a href="https://www.cvv.org.br/">Centro de Valorização da Vida</a>. <br>
+                        É uma linha especial, com profissionais prontos para de ouvir, que funciona 24h por dia.
+                    </p>
+                </div>
+                <div class="contato">
+                    <h3>Redes Sociais e Contato</h3>
+                    <div class="wpp">
+                        <a href="" target="_blank">
+                            <img src="/neuroses/assets/imgs/wpp_icon.svg" alt="whatsapp icon" width="32px" height="32px">
+                            WhatsApp
+                        </a>
+                    </div>
+                    <div class="ig">
+                        <a href="" target="_blank">
+                            <img src="/neuroses/assets/imgs/instagram_icon.svg" alt="instagram icon" width="32px" height="32px">
+                            Instagram
+                        </a>
+                    </div>
+                    <div class="fb">
+                        <a href="" target="_blank"> 
+                            <img src="/neuroses/assets/imgs/facebook_icon.svg" alt="facebook icon" width="32px" height="32px">
+                            Facebook
+                        </a>
+                    </div>
+                    <div class="tt">
+                        <a href="" target="_blank">
+                            <img src="/neuroses/assets/imgs/twitter_icon.svg" alt="twitter icon" width="32px" height="32px">
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
