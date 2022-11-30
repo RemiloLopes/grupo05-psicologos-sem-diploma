@@ -50,17 +50,22 @@
 //     }
 // }
 
-// function showContent2(ev,elem){
-//     (ev||event).preventDefault();
-//     var compStyle = window.getComputedStyle(elem);
-//     var display = compStyle.getPropertyValue('display');
-//     if (display === "block"){
-//         elem.style.display = "none";
-//     } else {
-//         elem.style.display = "block";
-//     }
-//     console.log(display)
-// }
+function showButtons(ev,elem){
+    (ev||event).preventDefault();
+    let compStyle = window.getComputedStyle(elem);
+    let display = compStyle.getPropertyValue('display');
+    if (display === "block"){
+        elem.style.display = "none"
+    } else{
+        elem.style.display = "block"
+    }
+    let arr = document.getElementsByClassName("retratil")
+    for (let element of arr){
+        if (element !== elem){
+            element.style.display = "none";
+        }
+    }
+}
 
 function showContent(ev,elem){
     (ev||event).preventDefault();
