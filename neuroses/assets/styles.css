@@ -3,19 +3,6 @@
     height: 20rem;
     background:url('/neuroses/assets/imgs/header_background_generico.jpg');
 } */
-.footer-button{
-    width: 8rem;
-    padding: 2px;
-}
-
-.footer-button > *{
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #neuroses{
     display:block
 }
@@ -53,4 +40,17 @@ header nav, .sidebar{
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+.footer-button{
+    width: 8rem;
+    padding: 2px;
+}
+
+.footer-button > *{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
