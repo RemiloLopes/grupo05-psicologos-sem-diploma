@@ -1,18 +1,69 @@
-/* .wrapper{ 
-    width: 100vw;
-    height: 20rem;
-    background:url('/neuroses/assets/imgs/header_background_generico.jpg');
-} */
-#neuroses{
-    display:block
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zilla Slab', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
+/* Inicio Header  */
+header .wrapper{
+    background-image: url(/neuroses/assets/imgs/header_background_generico.jpg);
+    height: 25vh;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.logo{
+    height: 13rem;
+    width: 13rem;
+}
+
+.filler{
+    height: 13rem;
+    width: 13rem;
+}
+
+nav ul {
+    display: flex;
+    padding: 0.3rem;
+}
+
+nav ul a{
+    display: flex;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    text-align: center;
+    width: 8rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(67, 184, 232, 0.3);
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 8px;
+    position:relative;
+    top: 1.5rem;
+}
+
+nav ul a:hover{
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+nav ul li p{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+/* fim Header  */
+
+/* Inicio body  */
+
+
+/* Inicio sidebar  */
 header nav, .sidebar{
     font-family: 'PT Serif', serif;
-}
-
-.content-wrapper, footer{
-    font-family: 'Zilla Slab', serif;
 }
 
 .hidden-content, .retratil{
@@ -41,16 +92,83 @@ header nav, .sidebar{
     text-align: center;
     justify-content: center;
 }
+/* fim sidebar  */
+
+/* fim body  */
+
+/* inicio footer  */
+
+.f-wrapper{
+    display: flex;
+    background-image: url(/neuroses/assets/imgs/header_background_generico.jpg);
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.disclaimer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-disclaimer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.titulo-disclaimer img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.paragrafo_maldito{
+    color: white;
+    width: 40vw;
+}
+
+.cvv{
+    width: 30vw;
+    color: white;
+}
+
+.cvv a{
+    color: white;
+    text-decoration: underline;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.contato h3{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.contato{
+    padding: 1rem;
+}
 
 .footer-button{
     width: 8rem;
-    padding: 2px;
+    padding: 0.2rem;
+}
+
+.footer-button img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
 }
 
 .footer-button > *{
     background-color: red;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
+/* fim footer  */
