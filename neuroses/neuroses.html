@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Zilla+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles.css">
-    <script src="/neuroses/assets/neuroses.js"></script>
+    <script src="/neuroses/assets/neuroses.js" defer></script>
     <title>Neuroses Comuns</title>
 </head>
 <body>
@@ -32,105 +32,103 @@
     <main>
         <section>
             <div class="container">
-                <div class="content-wrapper">
-                    <aside class="sidebar">
-                        <ul>
-                            <li>
-                                <div class="side-button" id="margin_correction" href="#" onclick="showContent(event,neuroses)">Neuroses</div>
-                            </li>
-                            <li>
-                                <div class="side-button" href="#" onclick="showButtons(event,ansiedade)">Ansiedade</div>
-                            </li>
-                            <div class="retratil" id="ansiedade">
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,t_ansiedade)">O que é</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,ansiedade_sintomas)">Sintomas</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,ansiedade_causas)">Causas</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,tipos_ansiedade)">Tipos de Ansiedade</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,ataque_ansiedade)">Crise de Ansiedade</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,evitar_ansiedade)">Como Evitar a Ansiedade</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,tratamentos_ansiedade)">Tratamentos</div></li>
-                            </div>
-                            <li>
-                                <div class="side-button" href="#" onclick="showButtons(event,depressao)">Depressão</div>
-                            </li>
-                            <div class="retratil" id="depressao">
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,t_depressao)">O que é</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,sintomas_depressao)">Sintomas</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,causas_depressao)">Causas</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,tipos_depressao)">Tipos de Depressão</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,sintomas_depressao)">Sintomas</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,tratamento_depressao)">Diagnóstico e Tratamento</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,recomendacoes_depressao)">Recomendações</div></li>
-                            </div>
-                            <li>
-                                <div class="side-button" href="#" onclick="showButtons(event,burnout)">Burnout</div>
-                            </li>
-                            <div class="retratil" id="burnout">
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,t_burnout)">O que é</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,sintomas_burnout)">Sintomas</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,tratamento_burnout)">Diagnóstico e Tratamento</div></li>
-                                <li><div class="side-hidden exist" href="#" onclick="showContent(event,prevencao_burnout)">Prevenção e Recomendações</div></li>
-                            </div>
-                        </ul>
-                    </aside>
-                        <div class="hidden-content" id="neuroses">
-                            <div class="filter">
-                                <h1>Neuroses Mais Presentes na Atualidade</h1>
-                                <h3>Breve definição e sintomas</h3>
-                                <p>
-                                    Neurose é uma condição emocional, afetiva e de personalidade que acontece quando o sistema nervoso de uma pessoa reage de forma descomedida, muito intensa, a uma determinada experiência já vivida. Uma pessoa neurótica passa a ter reações e comportamentos diferentes: fica muito ansiosa, evita sair de casa para ir a determinados lugares, tem medo de certas situações, imagina situações que pode fazer mal, ficam deprimidos mais constantemente, são mais preocupados... enfim, uma pessoa neurótica sente tudo o que uma pessoa normal sente no seu dia-a-dia mas sempre de forma amplificada e fora do controle. Em geral uma pessoa neurótica sabe do seu problema, sofre com isso, mas se sente incapaz de solucioná-lo.
-                                </p>
-                                <h3>Opções de Tratamento</h3>
-                                <p>
-                                    O tratamento mais comum para ajudar um paciente neurótico a lidar com esse distúrbio é a <b>psicoterapia</b>. A psicoterapia permite transformações profundas e pode ser feita individualmente, em grupo, com casal, entre família e intervenção institucional. Existem algumas vertentes diferentes de psicoterapia, cada uma com uma abordagem diferente.
-                                </p>
-                                <p>
-                                    Dentro dessas vertentes, uma se destaca. O tratamento mais eficaz, testado e comprovado cientificamente, para neuroses é a <b>Terapia Cognitivo Comportamental</b>, também chamada de <b>TCC</b>. A TCC é uma abordagem da psicoterapia baseada na combinação de conceitos do Behaviorismo radical com teorias cognitivas. A TCC entende a forma como o ser humano interpreta os acontecimentos como aquilo que nos afeta, e não os acontecimentos em si. Ou seja: é a forma como cada pessoa vê, sente e pensa com relação à uma situação que causa desconforto, dor, incômodo, tristeza ou qualquer outra sensação negativa. Seu objetivo principal é identificar padrões de comportamento, pensamento, crenças e hábitos que estão na origem dos problemas,  indicando, a partir disso, técnicas para alterar essas percepções de forma positiva. A TCC se destina tanto ao tratamento dos diferentes transtornos psicológicos e emocionais como a depressão, ansiedade, transtornos psicossomáticos, transtornos alimentares, fobias, traumas, dependência química, entre outros.
-                                </p>
-                                <h3>Descrição técnica e um pouco da história</h3>
-                                <p>
-                                    Neuroses são quadros patológicos psicogênicos (ou seja, de origem psíquica), muitas vezes ligados a situações externas na vida do indivíduo, os quais provocam transtornos na área mental, física e/ou da personalidade. De acordo com a visão psicanalítica, as neuroses são fruto de tentativas ineficazes de lidar com conflitos e traumas inconscientes. O que distingue a neurose da normalidade é: (1) a intensidade do comportamento e (2) a incapacidade do doente de resolver os conflitos internos e externos de maneira satisfatória.
-                                </p>
-                                <p>
-                                    O conceito de neurose está assim intimamente ligado à teoria nosológica psicanalítica, ou seja, à maneira como a psicanálise explica a origem e o desenvolvimento dos transtornos mentais. Por isso psicólogos oriundos de outras escolas, sobretudo da terapia cognitivo-comportamental, foram levados a criticar o termo: como tais psicoterapeutas não trabalham com os conceitos psicanalíticos, um diagnóstico de neurose não tem para eles nenhum sentido prático. Essa crítica levou a uma modificação dos sistemas de classificação de doenças: os atuais sistemas de classificação dos transtornos mentais abandonaram uma abordagem nosológica e adotaram uma descritiva. Isso significa que os transtornos não são mais classificados pela suposta origem do transtorno (por esta ser controversa), mas por seus sintomas observáveis (por estes serem unânimes). Assim, na nona edição da Classificação Internacional de Doenças (CID-9) havia uma categoria "Neuroses" de transtornos mentais própria, já com a publicação da décima edição (CID-10) em 1994 o termo passou a ser usado apenas descritivamente (e não mais "neuroses", mas "transtornos neuróticos") e não para todas as categorias que ele tradicionalmente designava.
-                                </p>
-                                <p>
-                                    Segundo a CID-9, sob neurose entendem-se os seguintes grupos de transtornos mentais:
-                                </p>
-                                <ul>
-                                    <li>Transtornos fóbicos-ansiosos e outros transtornos de ansiedade;</li>
-                                    <li>Transtorno obsessivo-compulsivo</li>
-                                    <li>Transtorno dissociativo (de conversão)</li>
-                                    <li>Transtornos somatoformes</li>
-                                    <li>Distimia e determinados tipos de depressão</li>
-                                    <li>Neurastenia</li>
-                                </ul>
-                                <p>
-                                    S. O. Hoffmann e G. Hochapfel fazem notar que a atual classificação dos transtornos mentais, por ser meramente descritiva, não faz jus à complexidade dos transtornos mentais, reduzindo-os a seus sintomas observáveis. M. Perrez e U. Baumann observam, por outro lado, que, apesar de não corresponderem a essa complexidade, os atuais sistemas representam uma base comum ao diálogo entre as diferentes escolas de psicoterapia.
-                                </p>
-                                <div class="fontes">
-                                    <h3>Fontes e referências (consultadas e adaptadas):</h3>
-                                    <ul>
-                                        <li><a href="https://zenklub.com.br/blog/para-voce/ansiedade/#:~:text=Ansiedade%20%C3%A9%20um%20sentimento%20ligado,comuns%20do%20que%20se%20imagina." target="_blank">Zenklub - Ansiedade</a></li>
-                                        <li>American Psychiatry Association. (2014). Diagnostic and Statistical Manual of Mental disorders – DSM-5. 5th.ed. Washington: American Psychiatric Association</li>
-                                        <li>Dugas, M.J., Robichaud, M. (2009). Tratamento Cognitivo-Comportamental para o Transtorno de Ansiedade Generalizada: da ciência a prática. Rio de Janeiro. Editora Cognitiva.</li>
-                                        <li><a href="https://pt.wikipedia.org/wiki/Neurose" target="_blank">Wikipedia - Neurose</a></li>
-                                        <li><a href="https://www.vittude.com/blog/terapia-cognitivo-comportamental/" target="_blank">Vittude - Terapia Cognitivo Comportamental/</a></li>
-                                        <li><a href="https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/depressao-causas-sintomas-tratamentos-diagnostico-e-prevencao#:~:text=A%20depress%C3%A3o%20%C3%A9%20uma%20doen%C3%A7a,podem%20combinar%2Dse%20entre%20si." target="_blank">TJDFT - Depressão: causas, sintomas, tratamentos, diagnósticos e prevenção</a></li>
-                                        <li><a href="https://drauziovarella.uol.com.br/doencas-e-sintomas/depressao/" target="_blank">Blog Drauzio Varella - Depressão</a></li>
-                                        <li><a href="https://www.youtube.com/@drauziovarella" target="_blank">Canal Drauzio Varella - YouTube</a></li>
-                                        <li><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sindrome-de-burnout#:~:text=S%C3%ADndrome%20de%20Burnout%20ou%20S%C3%ADndrome,justamente%20o%20excesso%20de%20trabalho." target="_blank">Ministério da Saúde - Síndrome de Burnout</a></li>
-                                        <li><a href="https://drauziovarella.uol.com.br/doencas-e-sintomas/sindrome-de-burnout-esgotamento-profissional/" target="_blank">Blog Drauzio Varella - Burnout</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <aside class="sidebar">
+                    <ul>
+                        <li>
+                            <div class="side-button" id="margin_correction" href="#" onclick="showContent(event,neuroses)">Neuroses</div>
+                        </li>
+                        <li>
+                            <div class="side-button" href="#" onclick="showButtons(event,ansiedade)">Ansiedade</div>
+                        </li>
+                        <div class="retratil" id="ansiedade">
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,t_ansiedade)">O que é</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,ansiedade_sintomas)">Sintomas</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,ansiedade_causas)">Causas</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,tipos_ansiedade)">Tipos de Ansiedade</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,ataque_ansiedade)">Crise de Ansiedade</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,evitar_ansiedade)">Como Evitar a Ansiedade</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,tratamentos_ansiedade)">Tratamentos</div></li>
                         </div>
+                        <li>
+                            <div class="side-button" href="#" onclick="showButtons(event,depressao)">Depressão</div>
+                        </li>
+                        <div class="retratil" id="depressao">
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,t_depressao)">O que é</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,sintomas_depressao)">Sintomas</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,causas_depressao)">Causas</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,tipos_depressao)">Tipos de Depressão</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,sintomas_depressao)">Sintomas</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,tratamento_depressao)">Diagnóstico e Tratamento</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,recomendacoes_depressao)">Recomendações</div></li>
+                        </div>
+                        <li>
+                            <div class="side-button" href="#" onclick="showButtons(event,burnout)">Burnout</div>
+                        </li>
+                        <div class="retratil" id="burnout">
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,t_burnout)">O que é</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,sintomas_burnout)">Sintomas</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,tratamento_burnout)">Diagnóstico e Tratamento</div></li>
+                            <li><div class="side-hidden exist" href="#" onclick="showContent(event,prevencao_burnout)">Prevenção e Recomendações</div></li>
+                        </div>
+                    </ul>
+                </aside>
+                <div class="content-wrapper">
+                    <div class="hidden-content" id="neuroses">
+                        <div class="filter">
+                            <h1>Neuroses Mais Presentes na Atualidade</h1>
+                            <h3>Breve definição e sintomas</h3>
+                            <p>
+                                Neurose é uma condição emocional, afetiva e de personalidade que acontece quando o sistema nervoso de uma pessoa reage de forma descomedida, muito intensa, a uma determinada experiência já vivida. Uma pessoa neurótica passa a ter reações e comportamentos diferentes: fica muito ansiosa, evita sair de casa para ir a determinados lugares, tem medo de certas situações, imagina situações que pode fazer mal, ficam deprimidos mais constantemente, são mais preocupados... enfim, uma pessoa neurótica sente tudo o que uma pessoa normal sente no seu dia-a-dia mas sempre de forma amplificada e fora do controle. Em geral uma pessoa neurótica sabe do seu problema, sofre com isso, mas se sente incapaz de solucioná-lo.
+                            </p>
+                            <h3>Opções de Tratamento</h3>
+                            <p>
+                                O tratamento mais comum para ajudar um paciente neurótico a lidar com esse distúrbio é a <b>psicoterapia</b>. A psicoterapia permite transformações profundas e pode ser feita individualmente, em grupo, com casal, entre família e intervenção institucional. Existem algumas vertentes diferentes de psicoterapia, cada uma com uma abordagem diferente.
+                            </p>
+                            <p>
+                                Dentro dessas vertentes, uma se destaca. O tratamento mais eficaz, testado e comprovado cientificamente, para neuroses é a <b>Terapia Cognitivo Comportamental</b>, também chamada de <b>TCC</b>. A TCC é uma abordagem da psicoterapia baseada na combinação de conceitos do Behaviorismo radical com teorias cognitivas. A TCC entende a forma como o ser humano interpreta os acontecimentos como aquilo que nos afeta, e não os acontecimentos em si. Ou seja: é a forma como cada pessoa vê, sente e pensa com relação à uma situação que causa desconforto, dor, incômodo, tristeza ou qualquer outra sensação negativa. Seu objetivo principal é identificar padrões de comportamento, pensamento, crenças e hábitos que estão na origem dos problemas,  indicando, a partir disso, técnicas para alterar essas percepções de forma positiva. A TCC se destina tanto ao tratamento dos diferentes transtornos psicológicos e emocionais como a depressão, ansiedade, transtornos psicossomáticos, transtornos alimentares, fobias, traumas, dependência química, entre outros.
+                            </p>
+                            <h3>Descrição técnica e um pouco da história</h3>
+                            <p>
+                                Neuroses são quadros patológicos psicogênicos (ou seja, de origem psíquica), muitas vezes ligados a situações externas na vida do indivíduo, os quais provocam transtornos na área mental, física e/ou da personalidade. De acordo com a visão psicanalítica, as neuroses são fruto de tentativas ineficazes de lidar com conflitos e traumas inconscientes. O que distingue a neurose da normalidade é: (1) a intensidade do comportamento e (2) a incapacidade do doente de resolver os conflitos internos e externos de maneira satisfatória.
+                            </p>
+                            <p>
+                                O conceito de neurose está assim intimamente ligado à teoria nosológica psicanalítica, ou seja, à maneira como a psicanálise explica a origem e o desenvolvimento dos transtornos mentais. Por isso psicólogos oriundos de outras escolas, sobretudo da terapia cognitivo-comportamental, foram levados a criticar o termo: como tais psicoterapeutas não trabalham com os conceitos psicanalíticos, um diagnóstico de neurose não tem para eles nenhum sentido prático. Essa crítica levou a uma modificação dos sistemas de classificação de doenças: os atuais sistemas de classificação dos transtornos mentais abandonaram uma abordagem nosológica e adotaram uma descritiva. Isso significa que os transtornos não são mais classificados pela suposta origem do transtorno (por esta ser controversa), mas por seus sintomas observáveis (por estes serem unânimes). Assim, na nona edição da Classificação Internacional de Doenças (CID-9) havia uma categoria "Neuroses" de transtornos mentais própria, já com a publicação da décima edição (CID-10) em 1994 o termo passou a ser usado apenas descritivamente (e não mais "neuroses", mas "transtornos neuróticos") e não para todas as categorias que ele tradicionalmente designava.
+                            </p>
+                            <p>
+                                Segundo a CID-9, sob neurose entendem-se os seguintes grupos de transtornos mentais:
+                            </p>
+                            <ul>
+                                <li>Transtornos fóbicos-ansiosos e outros transtornos de ansiedade;</li>
+                                <li>Transtorno obsessivo-compulsivo</li>
+                                <li>Transtorno dissociativo (de conversão)</li>
+                                <li>Transtornos somatoformes</li>
+                                <li>Distimia e determinados tipos de depressão</li>
+                                <li>Neurastenia</li>
+                            </ul>
+                            <p>
+                                S. O. Hoffmann e G. Hochapfel fazem notar que a atual classificação dos transtornos mentais, por ser meramente descritiva, não faz jus à complexidade dos transtornos mentais, reduzindo-os a seus sintomas observáveis. M. Perrez e U. Baumann observam, por outro lado, que, apesar de não corresponderem a essa complexidade, os atuais sistemas representam uma base comum ao diálogo entre as diferentes escolas de psicoterapia.
+                            </p>
+                            <div class="fontes">
+                                <h3>Fontes e referências (consultadas e adaptadas):</h3>
+                                <ul>
+                                    <li><a href="https://zenklub.com.br/blog/para-voce/ansiedade/#:~:text=Ansiedade%20%C3%A9%20um%20sentimento%20ligado,comuns%20do%20que%20se%20imagina." target="_blank">Zenklub - Ansiedade</a></li>
+                                    <li>American Psychiatry Association. (2014). Diagnostic and Statistical Manual of Mental disorders – DSM-5. 5th.ed. Washington: American Psychiatric Association</li>
+                                    <li>Dugas, M.J., Robichaud, M. (2009). Tratamento Cognitivo-Comportamental para o Transtorno de Ansiedade Generalizada: da ciência a prática. Rio de Janeiro. Editora Cognitiva.</li>
+                                    <li><a href="https://pt.wikipedia.org/wiki/Neurose" target="_blank">Wikipedia - Neurose</a></li>
+                                    <li><a href="https://www.vittude.com/blog/terapia-cognitivo-comportamental/" target="_blank">Vittude - Terapia Cognitivo Comportamental/</a></li>
+                                    <li><a href="https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/depressao-causas-sintomas-tratamentos-diagnostico-e-prevencao#:~:text=A%20depress%C3%A3o%20%C3%A9%20uma%20doen%C3%A7a,podem%20combinar%2Dse%20entre%20si." target="_blank">TJDFT - Depressão: causas, sintomas, tratamentos, diagnósticos e prevenção</a></li>
+                                    <li><a href="https://drauziovarella.uol.com.br/doencas-e-sintomas/depressao/" target="_blank">Blog Drauzio Varella - Depressão</a></li>
+                                    <li><a href="https://www.youtube.com/@drauziovarella" target="_blank">Canal Drauzio Varella - YouTube</a></li>
+                                    <li><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sindrome-de-burnout#:~:text=S%C3%ADndrome%20de%20Burnout%20ou%20S%C3%ADndrome,justamente%20o%20excesso%20de%20trabalho." target="_blank">Ministério da Saúde - Síndrome de Burnout</a></li>
+                                     <li><a href="https://drauziovarella.uol.com.br/doencas-e-sintomas/sindrome-de-burnout-esgotamento-profissional/" target="_blank">Blog Drauzio Varella - Burnout</a></li>
+                                     <li>Background Photo by <a href="https://unsplash.com/@joshuafuller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Joshua Fuller</a> on <a href="https://unsplash.com/s/photos/mental-illness?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
                     <div class="topicos-ansiedade">
                             <div class="hidden-content" id="t_ansiedade">
                                 <div class="filter">
-                                    <div class="hide" onclick="showContent(event,t_ansiedade)">
-                                        <img src="/neuroses/assets/imgs/pointer.svg" alt="hide-text-icon";>
-                                    </div>
                                     <h2>O que são transtornos de ansiedade?</h2>
                                         <p>Ansiedade é um sentimento ligado à preocupação, nervosismo e medo intenso. Apesar de ser uma reação natural do corpo, a ansiedade pode virar um distúrbio quando passa a atrapalhar nosso dia a dia.</p>
                                         <p>De fato, os transtornos de ansiedade são mais comuns do que se imagina.</p>
@@ -426,7 +424,7 @@
                                     <p>Diante das adversidades, as pessoas sem a doença sofrem, ficam tristes, mas encontram uma forma de superá-las. Nos quadros de depressão, a tristeza não dá tréguas, mesmo que não haja uma causa aparente. O humor permanece deprimido praticamente o tempo todo, por dias e dias seguidos. Desaparece o interesse pelas atividades que antes davam satisfação e prazer e a pessoa não tem perspectiva de que algo possa ser feito para que seu quadro melhore.</p>
                                     <p>A depressão é uma doença incapacitante que atinge por volta de 350 milhões de pessoas no mundo. Os quadros variam de intensidade e duração e podem ser classificados em três diferentes graus: leves, moderados e graves. Além disso, ela também pode atingir crianças. e adolescentes.</p>
                                     <h3>Vídeo: Dr. Drauzio fala sobre depressão na adolescência</h3>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e-W52pEez20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/e-W52pEez20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="fontes">
                                         <h3>Fontes e referências (consultadas e adaptadas):</h3>
                                         <ul>
@@ -754,6 +752,148 @@
                                     </div>
                                 </div>
                             </div>
+                    </div>
+                    <div class="sizing">
+                        <div class="carousel" aria-label="Gallery">
+                            <ol class="carousel__viewport">
+                              <li id="carousel__slide1"
+                                  tabindex="0"
+                                  class="carousel__slide">
+                                <div class="carousel__snapper">
+                                  <div class="filter"><span>Photo by <a target="_blank" href="https://unsplash.com/@joshuafuller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Fuller</a> on <a target="_blank" href="https://unsplash.com/s/photos/mental-illness?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></div>
+                                </div>
+                                <a href="#carousel__slide8"
+                                     class="carousel__prev">Go to last slide</a>
+                                <a href="#carousel__slide2"
+                                     class="carousel__next">Go to next slide</a>
+                              </li>
+                              <li id="carousel__slide2"
+                                  tabindex="0"
+                                  class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <div class="filter"><span>Photo by <a href="https://unsplash.com/@kekoss?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Kayla Koss</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></span></div>
+                                </div>
+                                <a href="#carousel__slide1"
+                                   class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide3"
+                                   class="carousel__next">Go to next slide</a>
+                              </li>
+                              <li id="carousel__slide3"
+                                  tabindex="0"
+                                  class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <div class="filter">
+                                        <span>Photo by <a target="_blank" href="https://unsplash.com/@jacklucassmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jack Lucas Smith</a> on <a target="_blank" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                                    </div>
+                                </div>
+                                <a href="#carousel__slide2"
+                                   class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide4"
+                                   class="carousel__next">Go to next slide</a>
+                              </li>
+                              <li id="carousel__slide4"
+                                  tabindex="0"
+                                  class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <div class="filter">
+                                        <span>Photo by <a target="_blank" href="https://unsplash.com/@luizr_ph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luiz Rogério Nunes</a> on <a target="_blank" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                                    </div>
+                                </div>
+                                <a href="#carousel__slide3"
+                                   class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide5"
+                                   class="carousel__next">Go to next slide</a>
+                              </li>
+                              <li id="carousel__slide5"
+                                  tabindex="0"
+                                  class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <div class="filter">
+                                        <span>Photo by <a target="_blank" href="https://unsplash.com/@gadiellv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gadiel Lazcano</a> on <a target="_blank" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                                    </div>
+                                </div>
+                                <a href="#carousel__slide4"
+                                   class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide6"
+                                   class="carousel__next">Go to first slide</a>
+                              </li>
+                              <li id="carousel__slide6"
+                                  tabindex="0"
+                                  class="carousel__slide">
+                                <div class="carousel__snapper">
+                                  <div class="filter">
+                                    <span>Photo by <a target="_blank" href="https://unsplash.com/es/@tinamosquito?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kristina Tripkovic</a> on <a target="_blank" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                                  </div>
+                                </div>
+                                <a href="#carousel__slide5"
+                                     class="carousel__prev">Go to last slide</a>
+                                  <a href="#carousel__slide7"
+                                     class="carousel__next">Go to next slide</a>
+                              </li>
+                              <li id="carousel__slide7"
+                                  tabindex="0"
+                                  class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <div class="filter">
+                                        <span>Photo by <a target="_blank" href="https://unsplash.com/@sseeker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stormseeker</a> on <a target="_blank" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                                    </div>
+                                </div>
+                                <a href="#carousel__slide6"
+                                   class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide8"
+                                   class="carousel__next">Go to next slide</a>
+                              </li>
+                              <li id="carousel__slide8"
+                                  tabindex="0"
+                                  class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <div class="filter">
+                                        <span>Photo by <a target="_blank" href="https://unsplash.com/@devintavery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Devin Avery</a> on <a target="_blank"  target="_blank"href="https://unsplash.com/s/photos/matches-burning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                                    </div>
+                                </div>
+                                <a href="#carousel__slide7"
+                                   class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide1"
+                                   class="carousel__next">Go to first slide</a>
+                              </li>
+                            </ol>
+                            <aside class="carousel__navigation">
+                              <ol class="carousel__navigation-list">
+                                <li class="carousel__navigation-item">
+                                  <a href="#carousel__slide1"
+                                     class="carousel__navigation-button">Go to slide 1</a>
+                                </li>
+                                <li class="carousel__navigation-item">
+                                  <a href="#carousel__slide2"
+                                     class="carousel__navigation-button">Go to slide 2</a>
+                                </li>
+                                <li class="carousel__navigation-item">
+                                  <a href="#carousel__slide3"
+                                     class="carousel__navigation-button">Go to slide 3</a>
+                                </li>
+                                <li class="carousel__navigation-item">
+                                  <a href="#carousel__slide4"
+                                     class="carousel__navigation-button">Go to slide 4</a>
+                                </li>
+                                <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide5"
+                                       class="carousel__navigation-button">Go to slide 5</a>
+                                  </li>
+                                  <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide6"
+                                       class="carousel__navigation-button">Go to slide 6</a>
+                                  </li>
+                                  <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide7"
+                                       class="carousel__navigation-button">Go to slide 7</a>
+                                  </li>
+                                  <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide8"
+                                       class="carousel__navigation-button">Go to slide 8</a>
+                                  </li>
+                              </ol>
+                            </aside>
+                          </div>
                     </div>
                 </div>
             </div>
