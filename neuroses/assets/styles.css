@@ -103,6 +103,11 @@ iframe{
     height: 650px;
 }
 
+#balance{
+  width: 10rem;
+  height: 10rem;
+}
+
 #neuroses{
     display: flex;
     background: url('/neuroses/assets/imgs/neuroses.jpg');
@@ -116,6 +121,7 @@ iframe{
     align-items: flex-start;
     justify-content: center;
     height: 100%;
+    gap: 1%;
 }
 
 .content-wrapper{
@@ -158,16 +164,16 @@ h3{
 }
 
 .topicos-ansiedade  .hidden-content{
-    background: url(/neuroses/assets/imgs/ansiedade_background_1.jpg), url(/neuroses/assets/imgs/ansiedade_background_3.jpg);
-    background-size: 100% auto, 100% auto;
+    background: url(/neuroses/assets/imgs/ansiedade_background_1.jpg), url(/neuroses/assets/imgs/ansiedade_background_3.jpg), url(/neuroses/assets/imgs/ansiedade_background_2.jpg);
+    background-size: 100% auto, 100% auto, 100% auto;
     background-repeat: no-repeat;
-    background-position: top, bottom;
+    background-position: top, center, bottom;
 }
 
 .topicos-depressao .hidden-content{
-    background: url(./imgs/depressao_background_3.jpg), url(./imgs/depressao_background_2.jpg);
+    background: url(./imgs/depressao_background_3.jpg), url(./imgs/depressao_background_1.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto, 100% auto;
+    background-size: 100% auto, 100% 50%;
     background-position: top, bottom;
 }
 
@@ -214,7 +220,7 @@ h3{
     font-size: 0rem;
     width: 10rem;
     transition: height 0.3s ease-in-out, font-size 0.3s;
-    border-radius: 4px;
+    /* border-radius: 8px; */
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -232,7 +238,7 @@ h3{
 .side-button{
     background-color: rgb(1, 10, 79, 0.6);
     border: 1px solid rgb(255, 255, 255, 0.6);
-    border-radius: 8px;
+    /* border-radius: 16px; */
 }
 
 /* tinha side-hidden */
@@ -392,47 +398,47 @@ h3{
   }
   
   .carousel__slide:nth-child(1) {
-    background: url(./imgs/neuroses.jpg);
+    background: url(/neuroses/assets/imgs/neuroses.jpg);
     background-size: 100% 100%;
   }
 
   .carousel__slide:nth-child(2) {
-    background: url(./imgs/ansiedade_background_1.jpg);
+    background: url(/neuroses/assets/imgs/ansiedade_background_1.jpg);
     background-size: 100% 150%;
     background-position: center bottom;
   }
   
   .carousel__slide:nth-child(3) {
-    background: url(./imgs/ansiedade_background_2.jpg);
+    background: url(/neuroses/assets/imgs/ansiedade_background_2.jpg);
     background-size: 100% 150%;
     background-position: center;
   }
   
   .carousel__slide:nth-child(4) {
-    background: url(./imgs/ansiedade_background_3.jpg);
+    background: url(/neuroses/assets/imgs/ansiedade_background_3.jpg);
     background-size: 100% 150%;
     background-position: center;
   }
   
   .carousel__slide:nth-child(5) {
-    background: url(./imgs/depressao_background_1.jpg);
+    background: url(/neuroses/assets/imgs/depressao_background_1.jpg);
     background-size: 120% 100%;
     background-position: center;
   }
   
   .carousel__slide:nth-child(6) {
-    background: url(./imgs/depressao_background_2.jpg);
+    background: url(/neuroses/assets/imgs/depressao_background_2.jpg);
     background-size: 100% 100%;
   }
 
   .carousel__slide:nth-child(7) {
-    background: url(./imgs/depressao_background_3.jpg);
+    background: url(/neuroses/assets/imgs/depressao_background_3.jpg);
     background-size: 100% 150%;
     background-position: center;
   }
   
   .carousel__slide:nth-child(8) {
-    background: url(./imgs/burnout_background_1.jpg);
+    background: url(/neuroses/assets/imgs/burnout_background_1.jpg);
     background-size: 100% 100%;
   }
 
