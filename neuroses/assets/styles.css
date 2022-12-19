@@ -617,11 +617,10 @@ h3{
 }
 
 .cvv{
-    margin-top: 2%;
-    color: white;
-    text-shadow: .5px .5px black;
-    width: 20%;
-    height: 100%;
+  color: white;
+  text-shadow: .5px .5px black;
+  width: 20%;
+  height: 50%;
 }
 
 .cvv a{
