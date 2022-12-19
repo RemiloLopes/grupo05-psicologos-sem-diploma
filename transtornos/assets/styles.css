@@ -23,7 +23,7 @@ header .wrapper{
     justify-content:space-around;
 }
 
-.logo-div{
+.logo-div, .filler{
     height: 80%;
     width: 12rem;
 }
@@ -31,11 +31,6 @@ header .wrapper{
 .logo{
     height: 100%;
     width: 100%;
-}
-
-.filler{
-    height: 80%;
-    width: 12rem;
 }
 
 nav{
@@ -69,7 +64,7 @@ nav li{
     height: 100%;
     align-items: center;
     justify-content: center;
-    background-color: rgba(1, 10, 79, 0.3);
+    background-color: rgba(1, 10, 79, 0.302);
     border: 1px solid rgb(255, 255, 255, 0.3);
     border-radius: 8px;
     position:relative;
@@ -223,30 +218,39 @@ table tr td, table tr th{
 }
 
 .topicos-transtornos .hidden-content{
-    background: url(/neuroses/assets/imgs/ansiedade_background_1.jpg), url(/neuroses/assets/imgs/ansiedade_background_3.jpg);
-    background-size: 100% auto, 100% auto;
+    background: url(/transtornos/assets/imgs/transtornos.jpg);
+    background-size:100% 100%;
     background-repeat: no-repeat;
-    background-position: top, bottom;
 }
 
-.topicos-ansiedade  .hidden-content{
-    background: url(/neuroses/assets/imgs/ansiedade_background_1.jpg), url(/neuroses/assets/imgs/ansiedade_background_3.jpg);
-    background-size: 100% auto, 100% auto;
-    background-repeat: no-repeat;
-    background-position: top, bottom;
+.topicos-paranoide .hidden-content, .topicos-esquizoide .hidden-content, .topicos-obsessivo .hidden-content{
+  background: url(/transtornos/assets/imgs/paranoid.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
 }
 
-.topicos-depressao .hidden-content{
-    background: url(./imgs/depressao_background_3.jpg), url(./imgs/depressao_background_2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto, 100% auto;
-    background-position: top, bottom;
+.topicos-antissocial .hidden-content{
+  background: url(/transtornos/assets/imgs/antissocial.jpg);
+  background-size:100% 130%;
+  background-repeat: no-repeat;
 }
 
-.topicos-burnout .hidden-content{
-    background:url(./imgs/burnout_background_1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.topicos-narcisistico .hidden-content{
+  background: url(/transtornos/assets/imgs/narcissist.jpg);
+  background-size:100% 130%;
+  background-repeat: no-repeat;
+}
+
+.topicos-borderline .hidden-content, .topicos-histrionico .hidden-content, .topicos-dependente .hidden-content{
+  background: url(/transtornos/assets/imgs/heartbroken.jpg);
+  background-size:100% 130%;
+  background-repeat: no-repeat;
+}
+
+.topicos-esquivo .hidden-content, .topicos-esquizotipico .hidden-content{
+  background: url(/transtornos/assets/imgs/avoidant.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
 }
 
 .filter{
@@ -285,7 +289,7 @@ table tr td, table tr th{
 }
 
 .side-hidden, .side-hidden2{
-    background-color: rgb(67, 184, 232, 0.3);
+    background-color: rgb(67, 184, 232, 0.5);
     /* border: 1px solid rgb(255, 255, 255, 0.6); */
     height: 0rem;
     font-size: 0rem;
@@ -301,9 +305,7 @@ table tr td, table tr th{
 }
 
 .side-hidden2{
-  background-color: hsl(9, 33%, 52%);
-  /* border: 1px solid white; */
-  /* border-radius: 4px; */
+  background-color: rgb(43, 54, 138, 0.5);
 }
 
 /* @keyframes slide_down{
@@ -332,13 +334,13 @@ table tr td, table tr th{
     font-size: 1.3rem;
 }
 .side-hidden2:hover{
-  background-color: hsl(9, 33%, 52%,0.5);
+  background-color: rgb(43, 54, 138, 0.8);
 }
 .side-hidden:hover{
-    background-color: rgb(67, 184, 232, 0.1);
+    background-color: rgb(67, 184, 232, 0.3);
 }
 .side-button:hover{
-    background: rgba(34, 45, 133, 0.3);
+    background: rgba(34, 45, 133, 0.6);
 }
 
 /* FIM SIDEBAR  */
@@ -476,47 +478,36 @@ table tr td, table tr th{
   }
   
   .carousel__slide:nth-child(1) {
-    background: url(/neuroses/assets/imgs/neuroses.jpg);
+    background: url(/transtornos/assets/imgs/transtornos.jpg);
     background-size: 100% 100%;
   }
 
   .carousel__slide:nth-child(2) {
-    background: url(/neuroses/assets/imgs/ansiedade_background_1.jpg);
-    background-size: 100% 150%;
+    background: url(/transtornos/assets/imgs/paranoid.jpg);
+    background-size: 100% 100%;
     background-position: center bottom;
   }
   
   .carousel__slide:nth-child(3) {
-    background: url(/neuroses/assets/imgs/ansiedade_background_2.jpg);
-    background-size: 100% 150%;
+    background: url(/transtornos/assets/imgs/antissocial.jpg);
+    background-size: 100% 100%;
     background-position: center;
   }
   
   .carousel__slide:nth-child(4) {
-    background: url(/neuroses/assets/imgs/ansiedade_background_3.jpg);
-    background-size: 100% 150%;
+    background: url(/transtornos/assets/imgs/heartbroken.jpg);
+    background-size: 100% 130%;
     background-position: center;
   }
   
   .carousel__slide:nth-child(5) {
-    background: url(/neuroses/assets/imgs/depressao_background_1.jpg);
-    background-size: 120% 100%;
+    background: url(/transtornos/assets/imgs/narcissist.jpg);
+    background-size: 100% 130%;
     background-position: center;
   }
   
   .carousel__slide:nth-child(6) {
-    background: url(/neuroses/assets/imgs/depressao_background_2.jpg);
-    background-size: 100% 100%;
-  }
-
-  .carousel__slide:nth-child(7) {
-    background: url(/neuroses/assets/imgs/depressao_background_3.jpg);
-    background-size: 100% 150%;
-    background-position: center;
-  }
-  
-  .carousel__slide:nth-child(8) {
-    background: url(/neuroses/assets/imgs/burnout_background_1.jpg);
+    background: url(/transtornos/assets/imgs/avoidant.jpg);
     background-size: 100% 100%;
   }
 
