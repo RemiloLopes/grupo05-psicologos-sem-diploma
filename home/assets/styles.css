@@ -1,0 +1,255 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   font-family: 'Zilla Slab', serif;
+}
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   font-family: 'Zilla Slab', serif;
+   list-style: none;
+   font-size: 1rem;
+}
+html {
+   max-width: 100vw;
+   max-height: 100vh;
+   box-sizing: border-box;
+   width: 100vw;
+}
+/* INICIO HEADER  */
+header .wrapper{
+   background-image: url(/home/assets/imgs/header_background_generico.jpg);
+   background-size: 100vw 100%;
+   height: 25vh;
+   width: 100vw;
+   max-width: 100%;
+   box-sizing: border-box;
+   display: flex;
+   padding: 1rem;
+   align-items: center;
+   justify-content:space-around;
+}
+
+.logo-div{
+   height: 95%;
+   width: 10%;
+}
+
+.logo{
+   height: 100%;
+   width: 100%;
+}
+
+.filler{
+   height: 95%;
+   width: 10%;
+}
+
+nav{
+   height: 40%;
+   width: 60%;
+   font-family: 'PT Serif', serif;
+   color: white;
+   font-weight: bold;
+   font-size: 1.3rem;
+}
+
+nav ul{
+   display: flex;
+   height: 100%;
+   width: 100%;
+   gap: 3%;
+}
+
+nav li{
+   height: 100%;
+   width: 20%;
+   display: flex;
+   justify-content: center;
+}
+
+.header-button{
+   display: flex;
+   padding: 3%;
+   text-align: center;
+   width: 90%;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(1, 10, 79, 0.3);
+   border: 1px solid rgb(255, 255, 255, 0.3);
+   border-radius: 8px;
+   position:relative;
+   top: 1.5rem;
+   font-size: 2.3;
+   font-weight: bold;
+   color: white;
+   text-shadow: 1px 1px black;
+}
+
+@keyframes upwards {
+   0% {transform:translate(0px);}
+   100% {transform: translate(0px,-0.5rem);font-size: 2.5vh;}
+}
+
+.header-button:hover{
+   background-color:rgba(38, 47, 114, 0.3);
+   border-radius: 8px;
+   animation: upwards .3s ease-in-out 0s 1 alternate both;
+}
+
+/* FIM HEADER  */
+.tela {
+   background: url(/home/assets/imgs/dark_blue_background_2.jpg); 
+   color: aliceblue;
+}
+
+.video {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 800px;
+   padding: 5px;
+   width: 100vw; 
+  
+ 
+}
+iframe {
+   width: 70%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+.texto {
+   color: white;
+   width: 70vw;
+   border: 1px solid white;
+   align-items: center;
+   border-radius: 5px;
+   padding: .5rem;
+   margin: auto;
+   font-size: 1.1rem;
+   
+     
+}
+/* INICIO FOOTER  */
+
+.f-wrapper{
+   box-sizing: border-box;
+   display: flex;
+   background-image: url(/home/assets/imgs/header_background_generico.jpg);
+   background-size: 100vw 100%;
+   align-items: center;
+   justify-content: space-around;
+   font-size: .8rem;
+   max-width: 100vw;
+   height: 25vh;
+   padding: 1rem;
+}
+
+.disclaimer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+   /* width: 40%; */
+}
+
+.titulo-disclaimer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 4%;
+   margin: 0px;
+   height: 30%;
+   width: 30%;
+   margin-bottom: 1%;
+}
+
+.titulo-disclaimer h3{
+   margin: 0px !important;
+   color: white;
+   text-shadow: .5px .5px black;
+}
+
+.titulo-disclaimer img{
+   height: 90%;
+   width: 30%;
+}
+
+
+.m-disclaimer{
+   color: white;
+   text-shadow: .5px .5px black;
+}
+
+.cvv{
+   color: white;
+   text-shadow: .5px .5px black;
+   width: 20%;
+   height: 50%;
+}
+
+.cvv a{
+   color: white;
+   text-decoration: underline;
+}
+
+.contato{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   gap: .5rem;
+   width: 25%;
+   height: 100%;
+}
+
+.contato h3{
+   margin: 0px !important;
+   padding: 0px;
+   color: white;
+   text-shadow: .5px .5px black;
+}
+
+.shelf{
+   display: flex;
+   justify-content: center;
+   gap: 5%;
+   width: 80%;
+   height: 30%;
+}
+
+.footer-button{
+   height: 100%;
+   width: 50%;
+}
+
+.footer-button img{
+   width: 20%;
+   height: 80%;
+   margin-left: 10%;
+}
+
+.footer-button > *{
+   background-color: rgb(1, 10, 79, 0.3);
+   border: 1px solid rgb(255, 255, 255, 0.3);
+   border-radius: 8px;
+   display: flex;
+   flex-direction: row;
+   color: white;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100%;
+   height: 100%;
+   gap: 10%;
+}
+
+.footer-button > *:hover{
+   background-color: rgb(255, 255, 255, 0.4);
+}
+/* FIM FOOTER  */
