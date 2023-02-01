@@ -73,35 +73,42 @@
                         </div><br>
                     </div>
                 </div>
-                <div class="form">
-                    <div class="assunto">
-                        <p class="assunto">Selecione o assunto e entre em contato</p>
-                        <select name="role">
-                            <option value="">Selecione o Assunto</option>
-                            <option value="Alimentação">Alimentação</option>
-                            <option value="Exercícios">Exercícios</option>
-                            <option value="Acompanhamento especializado">Acompanhamento especializado</option>
+                <div class="formulario">
+                    <form onsubmit="" method="get">
+                        <label for="intent">Selecione o assunto e entre em contato</label>
+                        <select id="intent" name="intent">
+                            <option value="" disabled selected>Selecione o Assunto</option>
+                            <option value="alimentacao">Alimentação</option>
+                            <option value="exercicios">Exercícios</option>
+                            <option value="acomp-espec">Acompanhamento especializado</option>
                         </select>
-                    </div>
-                    <div class="formulario">
-                        <form onsubmit="" method="get">
-                            <label>Nome:</label><input type="text" name="name" placeholder="Digite seu nome completo"><br>
-                            <label>E-mail:</label><input type="e-mail" placeholder="Digite seu e-mail"><br>
-                            <label>Assunto:</label><input type="subject" placeholder="Digite o assunto"><br>
-                            <label>Mensagem:</label>
-                            <textarea id="mensage"name="mensage" placeholder="Digite sua mensagem" maxlength="400"></textarea><br>
-                            <span class="contador"><span id="contador">400</span> letras restantes</span>
-                    </div>
+                        <p id="invalid-intent" class="invalid-text"></p>
 
-                    <div class="botao">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="name" placeholder="Digite seu nome completo">
+                        <p id="invalid-nome" class="invalid-text"></p>
+                        
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
+                        <p id="invalid-email" class="invalid-text"></p>
+
+                        <label for="assunto" >Assunto:</label>
+                        <input type="assunto" id="assunto" placeholder="Digite o assunto">
+                        <p id="invalid-assunto" class="invalid-text"></p>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" maxlength="400"></textarea>
+                        <span class="contador" id="contadorTexto"><span id="contador">400</span> letras restantes</span>
+                        <p id="invalid-text" class="invalid-text"></p>
+
+                        <div class="botao">
                         <button type="reset">
                             Limpar
                         </button>
                         <button type="submit">
                             Enviar Formulário
                         </button>
-
-                    </div>
+                        </div>
                     </form>
                 </div>
             </div>

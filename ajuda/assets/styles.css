@@ -189,13 +189,10 @@ a div {
    justify-content: center;
 }
 a div:hover {
-   background-color: rgba(38, 47, 114, 0.3);
+   background-color: rgba(105, 190, 223, 0.54);
+   cursor: pointer;
 }
-.assunto{
-   color: white;
-   padding: 5px;
- 
-}
+
  ul li h3 {
    color: white;
    font-size: 1.2rem;
@@ -203,11 +200,13 @@ a div:hover {
 
  }
 
-input, textarea { 
-   width: 20rem;
+input, textarea{ 
    background-color: rgba(107, 106, 114, 0.322);
    font-size: 1rem; 
+   padding: .3rem;
+   color: white;
 }
+
 textarea {
    height: 5rem;
    color: white;
@@ -221,24 +220,23 @@ select {
    text-align: center;
    font-size: 1rem;
 }
+
 .formulario{
    color: white;
    display: flex;
    margin-top: 5px;
    padding: 5px;
    border-radius: 8px;
-   
-   
 }
+
 form {
    display: flex;
    flex-direction: column;
-
 }
+
 .container2{
    justify-content: center;
    text-align: center;
-  
 } 
 
 #contador {
@@ -258,11 +256,17 @@ form {
   margin-bottom: 1rem;
 }
 
+.botao button:hover{
+   background-color: rgba(105, 190, 223, 0.54);
+   cursor: pointer;
+ }
+
 .botao {
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 1rem;
+   margin-top:1rem;
 }
 
 .item1 {
@@ -296,8 +300,55 @@ form {
    border-radius: 8px;
 }
 
+option{
+   background-color: rgb(37, 29, 86);
+ }
 
 
+/* VALIDAÇÃO FORMULÁRIO */
+
+label{
+   position:relative;
+   margin-top: 1rem;
+}
+ 
+ .invalid-text {
+   /* display: none; */
+   height: 0;
+   font-size: 0;
+   color: red;
+   height: fit-content;
+   margin: 0;
+   margin-top: 2px;
+ }
+ 
+ .required::before{
+   content: "*Campo obrigatório";
+   color: #DFDFDF;
+   font-size: .65rem;
+   padding: .2rem .3rem;
+   width: auto;
+   display: block;
+   background-color: #000000;
+ }
+ 
+ .incorrect {
+   border: solid 2px #8c1d1d;
+   background-color: #beadad;
+   color: #5e1d1d;
+ }
+ 
+ .correct {
+   background-color: #adcead;
+   border: solid 2px #205c20;
+   color: #1a551a;
+ }
+ 
+ .visible {
+   height: auto;
+   font-size: 1rem;
+   font-weight: 600;
+ }
 
 
 
