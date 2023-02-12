@@ -1,3 +1,66 @@
+//NAVBAR MOBILE
+function showNav(){
+    let navbar = document.getElementById("mobile-nav");
+    if (navbar.classList.contains("shown-nav")) {
+        setTimeout(function() {
+            navbar.style.right = -50 + "vw";
+        }, 20);
+        setTimeout(function() {
+            navbar.classList.remove("shown-nav");
+        }, 100);
+    }
+    else {
+        navbar.classList.add("shown-nav")
+        setTimeout(function() {
+            navbar.style.right = 0 + "vw";
+        }, 20);
+    }
+}
+//ICONE SIDEBAR MOBILE
+let icone = document.getElementById("botao-sidebar");
+let barra = document.getElementById("slide-topicos")
+let section = document.querySelector("section");
+let altura = section.scrollHeight;
+barra.style.height = altura-200 + "px";
+
+let sidebar = document.getElementById("sidebar");
+setInterval(function(){
+    let iconCompStyle = window.getComputedStyle(icone);
+    const display = iconCompStyle.getPropertyValue('display');
+    if(display == "none"){
+        sidebar.style.removeProperty('display');
+        sidebar.style.removeProperty('marginTop');
+        sidebar.style.removeProperty('position');
+        sidebar.style.removeProperty('top');
+        sidebar.style.removeProperty('left');
+    }
+}, 200)
+
+//SIDEBAR MOBILE
+function openSide(elem){
+    console.log(elem);
+    if (elem.style.position != "fixed"){
+        elem.style.position = "fixed";
+    }
+    if (elem.style.display == "flex") {
+        setTimeout(function() {
+            elem.style.left = -50 + "vw";
+        }, 20);
+        setTimeout(function() {
+            elem.style.display = "none";;
+        }, 100);
+    }
+    else{
+        elem.style.display = "flex";
+        setTimeout(function() {
+            elem.style.margin = 0;
+            elem.style.height = 60 + "vh";
+            elem.style.left = 1 + "vw";
+            elem.style.top = 40 + "vh";
+        }, 20);
+    }
+}
+
 const mainButtons = document.querySelectorAll(`#transtornos li div`);
 for (item of mainButtons){
     item.style.height = "3rem";

@@ -1,36 +1,67 @@
+//NAVBAR MOBILE
+function showNav(){
+    let navbar = document.getElementById("mobile-nav");
+    if (navbar.classList.contains("shown-nav")) {
+        setTimeout(function() {
+            navbar.style.right = -50 + "vw";
+        }, 20);
+        setTimeout(function() {
+            navbar.classList.remove("shown-nav");
+        }, 100);
+    }
+    else {
+        navbar.classList.add("shown-nav")
+        setTimeout(function() {
+            navbar.style.right = 0 + "vw";
+        }, 20);
+    }
+}
+//ICONE SIDEBAR MOBILE
+let icone = document.getElementById("botao-sidebar");
+let barra = document.getElementById("slide-topicos")
+let section = document.querySelector("section");
+let altura = section.scrollHeight;
+barra.style.height = altura-200 + "px";
+
+let sidebar = document.getElementById("sidebar");
+setInterval(function(){
+    let iconCompStyle = window.getComputedStyle(icone);
+    const display = iconCompStyle.getPropertyValue('display');
+    if(display == "none"){
+        sidebar.style.removeProperty('display');
+        sidebar.style.removeProperty('marginTop');
+        sidebar.style.removeProperty('position');
+        sidebar.style.removeProperty('top');
+        sidebar.style.removeProperty('left'); 
+    }
+}, 200)
+
+
+//SIDEBAR MOBILE
+function openSide(elem){
+    console.log(elem);
+    if (elem.style.position != "fixed"){
+        elem.style.position = "fixed";
+        elem.style.backgroundColor = "black";
+    }
+    if (elem.style.display == "flex") {
+        setTimeout(function() {
+            elem.style.left = -50 + "vw";
+        }, 20);
+        setTimeout(function() {
+            elem.style.display = "none";;
+        }, 100);
+    }
+    else{
+        elem.style.display = "flex";
+        setTimeout(function() {
+            elem.style.left = 1 + "vw";
+            elem.style.top = 37 + "vh";
+        }, 20);
+    }
+}
+
 // FUNÇÃO DE MUDAR O DISPLAY DOS BOTÕES
-// function showButtons(ev,elem){
-//     (ev||event).preventDefault();
-//     let compStyle = window.getComputedStyle(elem);
-//     let display = compStyle.getPropertyValue('display');
-//     if (display === "block"){
-//         elem.style.display = "none"
-//     } else{
-//         elem.style.display = "block"
-//     }
-//     let arr = document.getElementsByClassName("retratil")
-//     for (let element of arr){
-//         if (element !== elem){
-//             element.style.width = "none";
-//         }
-//     }
-// }
-
-
-// FUNÇÃO DE PEGAR BOTÃO PELO ARRAY
-// function showButtons(ev,elem){
-//     (ev||event).preventDefault();
-// //     let arr = document.getElementsByClassName("side-hidden");
-// //     let tamanho = arr.length
-// //     console.log(tamanho)
-// //     console.log(arr)
-// //     for (let element = 0; element < tamanho; element++) {
-// //         arr[0].classList.toggle("side-show");
-// //         arr[0].classList.toggle("side-hidden");
-// //         arr[0].style.animation = "slide_down 0.3s 1 both"
-// //     }
-// // }
-
 function showButtons(ev,elem){
     (ev||event).preventDefault();
     let filhos = document.getElementsByClassName("side-hidden")

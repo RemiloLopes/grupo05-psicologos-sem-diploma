@@ -1,3 +1,41 @@
+//NAVBAR MOBILE
+//TENTAR FAZER O POSITION ABSOLUTE SE ADAPTAR AO SCROLL
+// function showNav(){
+//     let navbar = document.getElementById("mobile-nav");
+//     if (navbar.classList.contains("shown-nav")) {
+//         setTimeout(function() {
+//             navbar.style.right = -50 + "vw";
+//         }, 20);
+//         setTimeout(function() {
+//             navbar.classList.remove("shown-nav");
+//         }, 100);
+//     }
+//     else {
+//         navbar.classList.add("shown-nav")
+//         setTimeout(function() {
+//             navbar.style.right = 0 + "vw";
+//         }, 20);
+//     }
+// }
+
+function showNav(){
+    let navbar = document.getElementById("mobile-nav");
+    if (navbar.classList.contains("shown-nav")) {
+        setTimeout(function() {
+            navbar.style.right = -50 + "vw";
+        }, 20);
+        setTimeout(function() {
+            navbar.classList.remove("shown-nav");
+        }, 100);
+    }
+    else {
+        navbar.classList.add("shown-nav")
+        setTimeout(function() {
+            navbar.style.right = 0 + "vw";
+        }, 20);
+    }
+}
+
 // ANIMAÇÃO DAS BARRAS
 function move(element, valorFinal) {
   let progress = element.querySelector(".progress");
@@ -35,11 +73,11 @@ function move(element, valorFinal) {
 let counter = 0
 document.addEventListener("scroll", ()=>{
     let section = document.querySelector('Section');
-    let body = document.querySelector('html');
-    let myScrollTop = body.scrollTop;
-    let myScrollHeight = body.scrollHeight;
+    let html = document.querySelector('html');
+    let myScrollTop = html.scrollTop;
+    let myScrollHeight = html.scrollHeight;
     let heightDiff = myScrollHeight - myScrollTop;
-    let divHeight = body.clientHeight;
+    let divHeight = html.clientHeight;
     let offPageHeight = 150;
     if(heightDiff < (divHeight+ offPageHeight) && (counter < 18)){
         for (let i = 0; i<3;i++){
