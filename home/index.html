@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/home/assets/styles.css">
+    <script src="./assets/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Zilla+Slab&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
@@ -22,10 +23,19 @@
                         <li><a href="/ajuda/ajuda.html" class="header-button">Como Conseguir Ajuda</a></li>
                     </ul>
                 </nav>
-                <div class="filler"></div>
+                <div class="logo-div"><img class="burguinho" src="/home/assets/imgs/burger-menu.svg" alt="burger-menu" onclick="showNav()"></div>
             </div>
         </div>
     </header>
+    <nav id="mobile-nav" class="hidden-nav">
+        <ul>
+            <li><a href="/home/index.html" class="header-button">Home</a></li>
+            <li><a href="/neuroses/neuroses.html" class="header-button">Neuroses</a></li>
+            <li><a href="/transtornos/transtornos.html" class="header-button">Transtornos de Personalidade</a></li>
+            <li><a href="/estatisticas/estatisticas.html" class="header-button">Estatísticas Globais</a></li>
+            <li><a href="/ajuda/ajuda.html" class="header-button">Como Conseguir Ajuda</a></li>
+        </ul>
+    </nav>
       <section class="tela">
        <div class="video">
         <iframe width="" height="" src="https://www.youtube.com/embed/R6EoI4eXspI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
