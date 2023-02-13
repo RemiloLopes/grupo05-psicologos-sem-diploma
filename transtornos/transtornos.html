@@ -14,27 +14,39 @@
     <header>
         <div class="container">
             <div class="wrapper">
-                <a href="/home/index.html" class="logo-div"><img src="/home/assets/imgs/logo.png"
-                        alt="Logo Health Mental" class="logo"></a>
+                <a href="/home/index.html" class="logo-div"><img src="/home/assets/imgs/logo.png" alt="Logo Health Mental" class="logo"></a>
                 <nav>
                     <ul>
                         <li><a href="/home/index.html" class="header-button">Home</a></li>
                         <li><a href="/neuroses/neuroses.html" class="header-button">Neuroses</a></li>
-                        <li><a href="/transtornos/transtornos.html" class="header-button">Transtornos de
-                                Personalidade</a></li>
-                        <li><a href="/estatisticas/estatisticas.html" class="header-button">Estatísticas Globais</a>
-                        </li>
+                        <li><a href="/transtornos/transtornos.html" class="header-button">Transtornos de Personalidade</a></li>
+                        <li><a href="/estatisticas/estatisticas.html" class="header-button">Estatísticas Globais</a></li>
                         <li><a href="/ajuda/ajuda.html" class="header-button">Como Conseguir Ajuda</a></li>
                     </ul>
                 </nav>
-                <div class="filler"></div>
+                <div class="logo-div"><img class="burguinho" src="/home/assets/imgs/burger-menu.svg" alt="burger-menu" onclick="showNav()"></div>
             </div>
         </div>
-    </header>
+       </header>
     <main>
+        <nav id="mobile-nav" class="hidden-nav">
+            <ul>
+                <li><a href="/home/index.html" class="header-button">Home</a></li>
+                <li><a href="/neuroses/neuroses.html" class="header-button">Neuroses</a></li>
+                <li><a href="/transtornos/transtornos.html" class="header-button">Transtornos de Personalidade</a></li>
+                <li><a href="/estatisticas/estatisticas.html" class="header-button">Estatísticas Globais</a></li>
+                <li><a href="/ajuda/ajuda.html" class="header-button">Como Conseguir Ajuda</a></li>
+            </ul>
+        </nav>
+        <div id="slide-topicos">
+            <div id="botao-sidebar">
+                <span>Topicos</span>
+                <img id="index-svg" src="/home/assets/imgs/indice.svg" alt="topicos" onclick="openSide(sidebar)">
+            </div>
+        </div>
         <section>
             <div class="container">
-                <aside class="sidebar">
+                <aside id="sidebar" class="sidebar">
                     <ul>
                         <li>
                             <div class="side-button" id="margin_correction" href="#"

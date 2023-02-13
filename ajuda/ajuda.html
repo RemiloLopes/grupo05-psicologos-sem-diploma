@@ -1,124 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
     <title>Formas de conseguir ajuda</title>
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="wrapper">
-                <!-- <img src="./assets/imgs/header_background_generico.jpg" alt="Header image" class="header-background"> -->
-                <a href="/home/index.html"><img src="/neuroses/assets/imgs/logo.png" alt="Logo Health Mental" class="logo" width , height="200px"></a>
+                <a href="/home/index.html" class="logo-div"><img src="/home/assets/imgs/logo.png" alt="Logo Health Mental" class="logo"></a>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="/home/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/neuroses/neuroses.html">Neuroses Mais Presentes na Atualidade</a>
-                        </li>
-                        <li>
-                            <a href="/transtornos/transtornos.html">Transtornos de Personalidade</a>
-                        </li>
-                        <li>
-                            <a href="/estatisticas/estatisticas.html">Estatísticas Globais</a>
-                        </li>
-                        <li>
-                            <a href="/ajuda/ajuda.html">Como Conseguir Ajuda</a>
-                        </li>
+                        <li><a href="/home/index.html" class="header-button">Home</a></li>
+                        <li><a href="/neuroses/neuroses.html" class="header-button">Neuroses</a></li>
+                        <li><a href="/transtornos/transtornos.html" class="header-button">Transtornos de Personalidade</a></li>
+                        <li><a href="/estatisticas/estatisticas.html" class="header-button">Estatísticas Globais</a></li>
+                        <li><a href="/ajuda/ajuda.html" class="header-button">Como Conseguir Ajuda</a></li>
                     </ul>
                 </nav>
+                <div class="logo-div"><img class="burguinho" src="/home/assets/imgs/burger-menu.svg" alt="burger-menu" onclick="showNav()"></div>
             </div>
         </div>
     </header>
-    <h1> Saúde mental levada a sério</h1>
-    <h2>Aqui você encontrará sujestões para te auxiliar </h2>
-    <section>
-        <div>
-            <ul>
-                <li>Alimentação</li>
-                <li>Exercícios</li>
-                <li>Acompanhamento especializado</li>
-            </ul>
-            <h2>Referêcia em cuidados mentais</h2>
-            <a href="https://ourworldindata.org/mental-health">https://ourworldindata.org/mental-health</a><br>
-            <a href=">https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-mental">https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-mental</a><br>
-            <a href="https://posdigital.pucpr.br/blog/alimentacao-e-saude-mental">https://posdigital.pucpr.br/blog/alimentacao-e-saude-mental</a><br>
-            <a href="https://institutodepsiquiatriapr.com.br/blog/exercicio-fisico-saude-mental/">https://institutodepsiquiatriapr.com.br/blog/exercicio-fisico-saude-mental/</a>
-        </div>
-    </section> 
-    <p>Selecione o assunto e entre em contato</p>
+    <nav id="mobile-nav" class="hidden-nav">
+        <ul>
+            <li><a href="/home/index.html" class="header-button">Home</a></li>
+            <li><a href="/neuroses/neuroses.html" class="header-button">Neuroses</a></li>
+            <li><a href="/transtornos/transtornos.html" class="header-button">Transtornos de Personalidade</a></li>
+            <li><a href="/estatisticas/estatisticas.html" class="header-button">Estatísticas Globais</a></li>
+            <li><a href="/ajuda/ajuda.html" class="header-button">Como Conseguir Ajuda</a></li>
+        </ul>
+    </nav>
+    <section class="tela">
 
-        <form onsubmit="" method="get">
-            <label>Nome:</label><input type="text" name="name"><br>
-            <label>E-mail:</label><input type="E-mail"><br>
-            <select name="role">
-                <option value="">Selecione o Assunto</option>
-                <option value="Alimentação">Alimentação</option>
-                <option value="Exercícios">Exercícios</option>
-                <option value="Acompanhamento especializado">Acompanhamento especializado</option>
-            </select>   
-            <br>
-            <label>Assunto:</label><input type="subject"><br>
-            <label>Mensagem:</label>
-            <textarea name="mensage"></textarea>
-            <button type="submit">Enviar</button>
-                         
-           <br>
-        </form>
-        <footer>
-            <div class="f-container">
-                <div class="f-wrapper">
-                    <div class="disclaimer">
-                        <div class="titulo-disclaimer">
-                            <img src="/neuroses/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
-                            <h3>Aviso!</h3>
-                            <img src="/neuroses/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
-                        </div>
-                        <p>
-                            É muito importante frisar que a nossa equipe <strong>não é formada por profissionais da área da saúde mental.</strong> <br>
-                            O nosso conteúdo tem o objetivo de <strong>informar</strong> e ajudar pessoas a entenderem melhor alguns quadros. <br>
-                            O que nos leva a um outro disclaimer importante: <strong>Não se autodiagnostique, por favor.</strong> <br>
-                            É de extrema importância que, caso você se identifique com algum quadro, <strong>procure ajuda profissional.</strong>
-                        </p> 
+        <h1> Saúde mental levada a sério</h1>
+        <h2>Aqui você encontrará sugestões para te auxiliar </h2>
+        <div class="geral">
+            <div class="esquerda">
+                <div class="imagens">
+                    <ul>
+                        <li><div class="circular--landscape"><img src="/home/assets/imgs/alimentacao.jpg" alt=""></div><h3>Alimentação </h3></li>
+
+
+                        <li><div class="circular--landscape"><img src="/home/assets/imgs/PessoasPraticandoExercicios.jpg" alt=""></div><h3>Exercícios</h3></li>
+
+
+                        <li><div class="circular--landscape"><img src="/home/assets/imgs/acompanhamentoPsicologico.jpg" alt=""></div><h3>Acompanhamento especializado</h3></li>
+
+                    </ul>
+                </div>
+                <div class="texto">
+                    <p>Olá, somos os psicólogos sem diploma. Esta página é destinada a auxiliar pessoas que necessitam de ajuda psicológica profissional. <br>
+                        Usamos esse canal para ligar pessoas que precisam de ajuda, com profissionais especializados</p>
+                   </div>
+            </div>
+            <div class="direita">
+                <div class="container2">
+                    <h2>Nos links abaixo você encontrará Instituições <br> e Organizações que darão apoio e suporte </h2>
+                    <div class="item1">
+                        <a href="https://ourworldindata.org/mental-health">
+                            <div> Our World in Data</div>
+                        </a>
+                        <br>
+                        <div><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-mental">
+                                <div>Ministério da Saúde</div>
+                            </a>
+                        </div><br>
+                        <div><a href="https://posdigital.pucpr.br/blog/alimentacao-e-saude-mental">
+                                <div>Estudo Sobre Alimentação PUCPR</div>
+                            </a>
+                        </div><br>
+                        <div><a href="https://institutodepsiquiatriapr.com.br/blog/exercicio-fisico-saude-mental/">
+                                <div>Instituto de Psiquiatria do Paraná</div>
+                            </a>
+                        </div><br>
                     </div>
-                    <div class="cvv">
-                        <p>Em caso de pensamentos ruins e/ou ideação suicida, <strong>ligue 188</strong> - <a href="https://www.cvv.org.br/">Centro de Valorização da Vida</a>. <br>
-                            É uma linha especial, com profissionais prontos para de ouvir, que funciona 24h por dia.
+                </div>
+                <div class="formulario">
+                    <form onsubmit="" method="get">
+                        <label for="intent">Selecione o assunto e entre em contato</label>
+                        <select id="intent" name="intent">
+                            <option value="" disabled selected>Selecione o Assunto</option>
+                            <option value="alimentacao">Alimentação</option>
+                            <option value="exercicios">Exercícios</option>
+                            <option value="acomp-espec">Acompanhamento especializado</option>
+                        </select>
+                        <p id="invalid-intent" class="invalid-text"></p>
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="name" placeholder="Digite seu nome completo">
+                        <p id="invalid-nome" class="invalid-text"></p>
+                        
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
+                        <p id="invalid-email" class="invalid-text"></p>
+
+                        <label for="assunto" >Assunto:</label>
+                        <input type="assunto" id="assunto" placeholder="Digite o assunto">
+                        <p id="invalid-assunto" class="invalid-text"></p>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" maxlength="400"></textarea>
+                        <span class="contador" id="contadorTexto"><span id="contador">400</span> letras restantes</span>
+                        <p id="invalid-text" class="invalid-text"></p>
+
+                        <div class="botao">
+                        <button type="reset">
+                            Limpar
+                        </button>
+                        <button type="submit">
+                            Enviar Formulário
+                        </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="f-container">
+            <div class="f-wrapper">
+                <div class="disclaimer">
+                    <div class="titulo-disclaimer">
+                        <img src="/home/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
+                        <h3>Aviso!</h3>
+                        <img src="/home/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
+                    </div>
+                    <div class="m-disclaimer">
+                        <p>
+                            É muito importante frisar que a nossa equipe <b>não é formada por profissionais da área da
+                                saúde mental.</b> <br>
+                            O nosso conteúdo tem o objetivo de <b>informar</b> e ajudar pessoas a entenderem melhor
+                            alguns quadros. <br>
+                            O que nos leva a um outro disclaimer importante: <b>Não se autodiagnostique, por favor.</b>
+                            <br>
+                            É de extrema importância que, caso você se identifique com algum quadro, <b>procure ajuda
+                                profissional.</b>
                         </p>
                     </div>
-                    <div class="contato">
-                        <h3>Redes Sociais e Contato</h3>
-                        <div class="wpp">
+                </div>
+                <div class="cvv">
+                    <p>Em caso de pensamentos ruins e/ou ideação suicida, <b>ligue 188</b> - <a
+                            href="https://www.cvv.org.br/">Centro de Valorização da Vida</a>. <br>
+                        É uma linha especial, com profissionais prontos para de ouvir, que funciona 24h por dia.
+                    </p>
+                </div>
+                <div class="contato">
+                    <h3>Redes Sociais e Contato</h3>
+                    <div class="shelf">
+                        <div class="footer-button" id="wpp">
                             <a href="" target="_blank">
-                                <img src="/neuroses/assets/imgs/wpp_icon.svg" alt="whatsapp icon" width="32px" height="32px">
-                                WhatsApp
+                                <img src="/home/assets/imgs/wpp_icon.svg" alt="whatsapp icon" width="32px"
+                                    height="32px">
+                                <p>WhatsApp</p>
                             </a>
                         </div>
-                        <div class="ig">
+                        <div class="footer-button" id="ig">
                             <a href="" target="_blank">
-                                <img src="/neuroses/assets/imgs/instagram_icon.svg" alt="instagram icon" width="32px" height="32px">
-                                Instagram
+                                <img src="/home/assets/imgs/instagram_icon.svg" alt="instagram icon" width="32px"
+                                    height="32px">
+                                <p>Instagram</p>
                             </a>
                         </div>
-                        <div class="fb">
-                            <a href="" target="_blank"> 
-                                <img src="/neuroses/assets/imgs/facebook_icon.svg" alt="facebook icon" width="32px" height="32px">
-                                Facebook
+                    </div>
+                    <div class="shelf">
+                        <div class="footer-button" id="fb">
+                            <a href="" target="_blank">
+                                <img src="/home/assets/imgs/facebook_icon.svg" alt="facebook icon" width="32px"
+                                    height="32px">
+                                <p>Facebook</p>
                             </a>
                         </div>
-                        <div class="tt">
+                        <div class="footer-button" id="tt">
                             <a href="" target="_blank">
-                                <img src="/neuroses/assets/imgs/twitter_icon.svg" alt="twitter icon" width="32px" height="32px">
-                                Twitter
+                                <img src="/home/assets/imgs/twitter_icon.svg" alt="twitter icon" width="32px"
+                                    height="32px">
+                                <p>Twitter</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <script src="/ajuda/assets/ajuda.js"></script>
 </body>
+
 </html>

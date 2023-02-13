@@ -4,92 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home/assets/styles.css">
+    <script src="./assets/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Zilla+Slab&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="wrapper">
-                <!-- <img src="./assets/imgs/header_background_generico.jpg" alt="Header image" class="header-background"> -->
-                <a href="/home/index.html"><img src="/neuroses/assets/imgs/logo.png" alt="Logo Health Mental" class="logo" width , height="200px"></a>
+                <a href="/home/index.html" class="logo-div"><img src="/home/assets/imgs/logo.png" alt="Logo Health Mental" class="logo"></a>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="/home/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/neuroses/neuroses.html">Neuroses Mais Presentes na Atualidade</a>
-
-                        </li>
-                        <li>
-                            <a href="/transtornos/transtornos.html">Transtornos de Personalidade</a>
-                        </li>
-                        <li>
-                            <a href="/estatisticas/estatisticas.html">Estatísticas Globais</a>
-                        </li>
-                        <li>
-                            <a href="/ajuda/ajuda.html">Como Conseguir Ajuda</a>
-                        </li>
+                        <li><a href="/home/index.html" class="header-button">Home</a></li>
+                        <li><a href="/neuroses/neuroses.html" class="header-button">Neuroses</a></li>
+                        <li><a href="/transtornos/transtornos.html" class="header-button">Transtornos de Personalidade</a></li>
+                        <li><a href="/estatisticas/estatisticas.html" class="header-button">Estatísticas Globais</a></li>
+                        <li><a href="/ajuda/ajuda.html" class="header-button">Como Conseguir Ajuda</a></li>
                     </ul>
                 </nav>
+                <div class="logo-div"><img class="burguinho" src="/home/assets/imgs/burger-menu.svg" alt="burger-menu" onclick="showNav()"></div>
             </div>
         </div>
     </header>
-      <section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/R6EoI4eXspI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Olá, somos os psicólogos sem diploma. Esta página é destinada a auxiliar pessoas que necessitam de ajuda psicológica profissional. <br>
+    <nav id="mobile-nav" class="hidden-nav">
+        <ul>
+            <li><a href="/home/index.html" class="header-button">Home</a></li>
+            <li><a href="/neuroses/neuroses.html" class="header-button">Neuroses</a></li>
+            <li><a href="/transtornos/transtornos.html" class="header-button">Transtornos de Personalidade</a></li>
+            <li><a href="/estatisticas/estatisticas.html" class="header-button">Estatísticas Globais</a></li>
+            <li><a href="/ajuda/ajuda.html" class="header-button">Como Conseguir Ajuda</a></li>
+        </ul>
+    </nav>
+      <section class="tela">
+       <div class="video">
+        <iframe width="" height="" src="https://www.youtube.com/embed/R6EoI4eXspI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+       <div>
+        <p class="texto">Olá, somos os psicólogos sem diploma. Esta página é destinada a auxiliar pessoas que necessitam de ajuda psicológica profissional. <br>
             Usamos esse canal para ligar pessoas que precisam de ajuda, com profissionais especializados</p>
-    </section> <br>
-        <footer>
-            <div class="f-container">
-                <div class="f-wrapper">
-                    <div class="disclaimer">
-                        <div class="titulo-disclaimer">
-                            <img src="/neuroses/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
-                            <h3>Aviso!</h3>
-                            <img src="/neuroses/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
-                        </div>
+       </div>
+    </section> 
+    <footer>
+        <div class="f-container">
+            <div class="f-wrapper">
+                <div class="disclaimer">
+                    <div class="titulo-disclaimer">
+                        <img src="/home/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
+                        <h3>Aviso!</h3>
+                        <img src="/home/assets/imgs/disclaimer.svg" alt="warning icon" width="64px" height="64px">
+                    </div>
+                    <div class="m-disclaimer">
                         <p>
-                            É muito importante frisar que a nossa equipe <strong>não é formada por profissionais da área da saúde mental.</strong> <br>
-                            O nosso conteúdo tem o objetivo de <strong>informar</strong> e ajudar pessoas a entenderem melhor alguns quadros. <br>
-                            O que nos leva a um outro disclaimer importante: <strong>Não se autodiagnostique, por favor.</strong> <br>
-                            É de extrema importância que, caso você se identifique com algum quadro, <strong>procure ajuda profissional.</strong>
-                        </p> 
-                    </div>
-                    <div class="cvv">
-                        <p>Em caso de pensamentos ruins e/ou ideação suicida, <strong>ligue 188</strong> - <a href="https://www.cvv.org.br/">Centro de Valorização da Vida</a>. <br>
-                            É uma linha especial, com profissionais prontos para de ouvir, que funciona 24h por dia.
+                            É muito importante frisar que a nossa equipe <b>não é formada por profissionais da área da saúde mental.</b> <br>
+                            O nosso conteúdo tem o objetivo de <b>informar</b> e ajudar pessoas a entenderem melhor alguns quadros. <br>
+                            O que nos leva a um outro disclaimer importante: <b>Não se autodiagnostique, por favor.</b> <br>
+                            É de extrema importância que, caso você se identifique com algum quadro, <b>procure ajuda profissional.</b>
                         </p>
+                    </div> 
+                </div>
+                <div class="cvv">
+                    <p>Em caso de pensamentos ruins e/ou ideação suicida, <b>ligue 188</b> - <a href="https://www.cvv.org.br/">Centro de Valorização da Vida</a>. <br>
+                        É uma linha especial, com profissionais prontos para de ouvir, que funciona 24h por dia.
+                    </p>
+                </div>
+                <div class="contato">
+                    <h3>Redes Sociais e Contato</h3>
+                    <div class="shelf">
+                        <div class="footer-button" id="wpp">
+                            <a href="" target="_blank">
+                                <img src="/home/assets/imgs/wpp_icon.svg" alt="whatsapp icon" width="32px" height="32px">
+                                <p>WhatsApp</p>
+                            </a>
+                        </div>
+                        <div class="footer-button" id="ig">
+                            <a href="" target="_blank">
+                                <img src="/home/assets/imgs/instagram_icon.svg" alt="instagram icon" width="32px" height="32px">
+                                <p>Instagram</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="contato">
-                        <h3>Redes Sociais e Contato</h3>
-                        <div class="wpp">
+                    <div class="shelf">
+                        <div class="footer-button" id="fb">
                             <a href="" target="_blank">
-                                <img src="/neuroses/assets/imgs/wpp_icon.svg" alt="whatsapp icon" width="32px" height="32px">
-                                WhatsApp
+                                <img src="/home/assets/imgs/facebook_icon.svg" alt="facebook icon" width="32px" height="32px">
+                                <p>Facebook</p>
                             </a>
                         </div>
-                        <div class="ig">
+                        <div class="footer-button" id="tt">
                             <a href="" target="_blank">
-                                <img src="/neuroses/assets/imgs/instagram_icon.svg" alt="instagram icon" width="32px" height="32px">
-                                Instagram
-                            </a>
-                        </div>
-                        <div class="fb">
-                            <a href="" target="_blank"> 
-                                <img src="/neuroses/assets/imgs/facebook_icon.svg" alt="facebook icon" width="32px" height="32px">
-                                Facebook
-                            </a>
-                        </div>
-                        <div class="tt">
-                            <a href="" target="_blank">
-                                <img src="/neuroses/assets/imgs/twitter_icon.svg" alt="twitter icon" width="32px" height="32px">
-                                Twitter
+                                <img src="/home/assets/imgs/twitter_icon.svg" alt="twitter icon" width="32px" height="32px">
+                                <p>Twitter</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>
