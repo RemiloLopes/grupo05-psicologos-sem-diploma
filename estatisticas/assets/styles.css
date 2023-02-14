@@ -30,7 +30,7 @@ section a{
 
 /* INICIO HEADER  */
 header .wrapper{
-  background-image: url(/home/assets/imgs/header_background_generico.jpg);
+  background-image: url(/assets/imgs/header_background_generico.jpg);
   background-size: 100vw 100%;
   height: 25vh;
   width: 100vw;
@@ -208,7 +208,7 @@ nav li{
 
 /* INÍCIO BODY */
 .container{
-  background: url(/home/assets/imgs/dark_blue_background_2.jpg);
+  background: url(/assets/imgs/dark_blue_background_2.jpg);
   background-size: 100vw 450vh;
   display: flex;
   align-items: flex-start;
@@ -573,7 +573,7 @@ label{
 .f-wrapper{
   box-sizing: border-box;
   display: flex;
-  background-image: url(/home/assets/imgs/header_background_generico.jpg);
+  background-image: url(/assets/imgs/header_background_generico.jpg);
   background-size: 100vw 100%;
   align-items: center;
   justify-content: space-around;
