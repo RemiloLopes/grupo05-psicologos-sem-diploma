@@ -32,11 +32,6 @@ header .wrapper{
    align-items: center;
    justify-content:space-around;
  }
- @media (max-width: 768px){
-   header .wrapper{
-     position:fixed;
-   }
- }
  
  .logo-div{
    height: 95%;
@@ -205,6 +200,7 @@ header .wrapper{
 .tela {
    background: url(/home/assets/imgs/dark_blue_background_2.jpg); 
    color: aliceblue;
+   height: max-content;
 }
 
 .video {
@@ -212,13 +208,10 @@ header .wrapper{
    justify-content: center;
    align-items: center;
    height: 800px;
-   padding: 5px;
    width: 100vw; 
-  
- 
 }
 iframe {
-   width: 70%;
+   width: 95%;
    height: 100%;
    margin: 0;
    padding: 0;
@@ -232,8 +225,9 @@ iframe {
    padding: .5rem;
    margin: auto;
    font-size: 1.1rem;
-   
-     
+}
+.div-texto{
+  margin-top: 1rem;
 }
 /* INICIO FOOTER  */
 

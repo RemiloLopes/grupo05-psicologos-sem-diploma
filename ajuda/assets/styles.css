@@ -26,11 +26,6 @@ header .wrapper{
    align-items: center;
    justify-content:space-around;
  }
- @media (max-width: 768px){
-   header .wrapper{
-     position:fixed;
-   }
- }
  
  .logo-div{
    height: 95%;
@@ -195,221 +190,37 @@ header .wrapper{
    animation: upwards .3s ease-in-out 0s 1 alternate both;
  }
  
- /* FIM HEADER  *//* INICIO HEADER  */
-header .wrapper{
-  background-image: url(/home/assets/imgs/header_background_generico.jpg);
-  background-size: 100vw 100%;
-  height: 25vh;
-  width: 100vw;
-  max-width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-  justify-content:space-around;
-}
-@media (max-width: 768px){
-  header .wrapper{
-    position:fixed;
-  }
-}
-
-.logo-div{
-  height: 95%;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 1600px){
-  .logo-div{
-    height: 90%;
-    width: 170px;
-  }
-}
-@media (max-width: 1200px){
-  .logo-div{
-    height: 70%;
-    width: 130px;
-  }
-}
-@media (max-width: 1024px){
-  .logo-div{
-    height: 50%;
-    width: 100px;
-  }
-}
-@media (max-width: 768px){
-  .logo-div{
-    height: 80%;
-    width: 20vw;
-  }
-}
-@media (max-width: 480px){
-  .logo-div{
-    height: 60%;
-    width: 20vw;
-  }
-}
-
-.logo{
-  height: 100%;
-  width: 100%;
-}
-
-.burguinho{
-  display:none;
-}
-@media (max-width: 768px){
-  .burguinho {
-    display: block;
-    filter: invert(74%) sepia(59%) saturate(503%) hue-rotate(167deg) brightness(103%) contrast(95%);
-  }
-}
-
-.hidden-nav {
-  display: none;
-}
-
-.shown-nav {
-  display: flex;
-  width: 50vw;
-  height: fit-content;
-  position: fixed;
-  top: 25vh;
-  right: -50vw;
-  transition: right .1s linear;
-  background-color: #7fd8f9;
-  z-index: 9;
-}
-.shown-nav ul{
-  gap: 2px;
-  flex-direction: column;
-  height: 75vh;
-  align-items: center;
-  justify-content: center;
-}
-.shown-nav ul li{
-  width: 100%;
-  height: 20%;
-}
-.shown-nav ul .header-button{
-  border-radius: 0px;
-  top: 0px;
-  margin: 0px;
-  padding: 0px;
-  height: 100%;
-  width: 100%;
-  font-size: 1.5rem;
-}
-
-nav{
-  height: 40%;
-  width: 60%;
-  font-family: 'PT Serif', serif;
-  color: white;
-  font-weight: bold;
-  /* font-size: 1.3rem; */
-}
-
-@media (max-width:768px) {
-  nav{
-    display: none;
-  }
-}
-
-nav ul{
-  display: flex;
-  height: 100%;
-  width: 100%;
-  gap: 3%;
-}
-
-nav li{
-  height: 100%;
-  width: 20%;
-  display: flex;
-  justify-content: center;
-}
-
-.header-button{
-  display: flex;
-  padding: 3%;
-  text-align: center;
-  width: 90%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(1, 10, 79, 0.3);
-  border: 1px solid rgb(255, 255, 255, 0.3);
-  border-radius: 8px;
-  position:relative;
-  top: 1.5rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: white;
-  text-shadow: 1px 1px black;
-}
-@media (max-width: 1400px){
-  .header-button{
-    font-size: 1rem;
-  }
-}
-@media (max-width: 1200px){
-  .header-button{
-    font-size: .9rem;
-  }
-}
-@media (max-width: 900px){
-  .header-button{
-    font-size: .8rem;
-  }
-}
-
-@keyframes upwards {
-  0% {transform:translate(0px);}
-  100% {transform: translate(0px,-0.5rem);font-size: 1.5rem;}
-}
-
-.header-button:hover{
-  background-color:rgba(38, 47, 114, 0.3);
-  border-radius: 8px;
-  animation: upwards .3s ease-in-out 0s 1 alternate both;
-}
-
-/* FIM HEADER  */
-
-
-
-
+ /* FIM HEADER  */
 
 
 section h1 {
    color: white;
    padding: 10px;
    font-size: 2.4rem;
-   text-align: center;
-   
-   
+   text-align: center;  
 }
 
 section h2 {
-   
    padding: 10px;
    color: white;
    text-align: center;
    font-size: 1.5rem;
-   
-   
 }
+
+
 section li {
    color: white;
    padding: 10px;
-  
 }
+
 .geral {
    display: flex;
    justify-content: space-around;
+}
+@media (max-width: 768px){
+  .geral{
+    flex-direction: column;
+  }
 }
 .direita {
    display: flex;
@@ -424,16 +235,32 @@ section li {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   width: 70%;
 }
 .imagens ul{
    display: flex;
    text-align: center;
-   gap: 3rem;
+   /* gap: 3rem;  */
    margin-top: 10rem;
 }
+@media (max-width: 768px){
+  .imagens{
+    height: 100%;
+  }
+  .esquerda{
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .imagens ul{
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
 .imagens li {
    display: flex;
    flex-direction: column;
+   align-items: center;
 }
 .imagens img {
    width: 20vw;
@@ -446,11 +273,23 @@ section li {
    border-radius: 1000px;
 }
 .circular--landscape { 
-   display: inline-block; position: relative; width: 300px; height: 300px; overflow: hidden; border-radius: 50%; } 
+   display: inline-block; position: relative; width: 20vw; height: 20vw; overflow: hidden; border-radius: 50%; } 
 
-
+@media (max-width: 1200px){
+  .circular--landscape {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+@media (max-width: 768px){
+  .circular--landscape {
+   width: 50vw;
+   height: 50vw;
+  }
+ }
 .circular--landscape img { 
    width: auto; height: 100%; margin-left: -50px; }   
+
 
 
 .tela{
@@ -479,7 +318,11 @@ a div:hover {
    color: white;
    font-size: 1.2rem;
    margin-top: 1rem;
-
+ }
+ @media (max-width: 1200px){
+  ul li h3{
+    font-size: 1rem;
+  }
  }
 
 input, textarea{ 
@@ -507,8 +350,15 @@ select {
    color: white;
    display: flex;
    margin-top: 5px;
-   padding: 5px;
+   padding: 0px;
    border-radius: 8px;
+}
+
+select{
+  width: 95%;
+}
+input, textarea{
+  width: 90%;
 }
 
 form {
@@ -519,7 +369,12 @@ form {
 .container2{
    justify-content: center;
    text-align: center;
-} 
+}
+@media (max-width: 768px){
+  .container2 h2{
+    margin-bottom: 1rem;
+  }
+}
 
 #contador {
    display: inline;
@@ -528,6 +383,12 @@ form {
 .contador {
    text-align: end;
 }
+@media (max-width: 768px){
+  .contador {
+    width: 95%;
+  }
+}
+
 .botao button{
    margin-top: 5px;
    padding: 5px;
@@ -556,6 +417,7 @@ form {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   width: 100%;
 }
 
 .texto {
@@ -564,12 +426,17 @@ form {
    border: 1px solid rgba(202, 202, 228, 0.192);
    border-radius: 8px;
    display: flex;
-   height: 5rem;
+   height: fit-content;
    width: 100%;
    align-items: center;
    justify-content: center;
    padding: 1rem;
    box-sizing: border-box;
+}
+@media (max-width: 768px){
+  .texto{
+    height: fit-content;
+  }
 }
 
 .texto p {
@@ -814,6 +681,19 @@ label{
   }
   .shelf {
     gap: 3rem;
+  }
+}
+
+@media (max-width: 500px){
+  .shelf{
+    gap: 1rem;
+  }
+  .footer-button, .footer-button a{
+    width: 7rem;
+  }
+  .footer-button a p{
+    /* width: 3rem; */
+    font-size: .8rem;
   }
 }
 /* FIM FOOTER  */
