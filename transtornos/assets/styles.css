@@ -30,13 +30,6 @@ header .wrapper{
   align-items: center;
   justify-content:space-around;
 }
-@media (max-width: 768px){
-  header .wrapper{
-    position:fixed;
-    z-index: 9;
-    height: 25vh;
-  }
-}
 
 .logo-div{
   height: 95%;

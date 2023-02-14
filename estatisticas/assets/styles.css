@@ -41,11 +41,6 @@ header .wrapper{
   align-items: center;
   justify-content:space-around;
 }
-@media (max-width: 768px){
-  header .wrapper{
-    position:fixed;
-  }
-}
 
 .logo-div{
   height: 95%;
