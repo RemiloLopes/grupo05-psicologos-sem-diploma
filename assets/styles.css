@@ -11,6 +11,7 @@ html {
    max-height: 100vh;
    box-sizing: border-box;
    width: 100vw;
+   overflow-x: hidden;
 }
 /* INICIO HEADER  */
 header .wrapper{
